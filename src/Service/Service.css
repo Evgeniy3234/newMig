@@ -1,0 +1,57 @@
+.Service{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    /* width: 592px; */
+    width: 100%;
+    height: 173px;
+    box-shadow: 4.62px 4.62px 23.08px 0px rgba(0, 0, 0, 0.15);
+
+}
+.Service:hover{
+    box-shadow: 4.62px 4.62px 23.08px 0px rgba(0, 0, 0, 0.15);
+
+}
+.LeftPartService{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+    height: 100%;
+    background-color: #C4D7F0;
+    border-radius: 20px 0 0 20px;
+}
+.RightPartService{
+    display: flex;
+    /* flex-direction: column; */
+    align-items: center;
+    justify-content: center;
+    width: 98px;
+    height: 100%;
+    background-color: #DAE7F7;
+    border-radius: 0 20px 20px 0;
+}
+.ServieTitile{
+    color: #242A40;
+    font-size: 34px;
+    font-weight: 600;
+    line-height: 23px;
+    text-wrap: wrap;
+    margin-left: 34px;
+    cursor: default;
+}
+.ServieDescription{
+    color: #242A40;
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 23px;
+    text-wrap: wrap;
+    margin-left: 34px;
+    margin-top: 24px;
+    cursor: default;
+}
+.ControlArrow{
+    
+}

@@ -1,0 +1,35 @@
+.InfoLineContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+    height: 56px;
+    background-color: #FFFFFF;
+}
+.InfoLineItemStart{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+}
+.InfoLineItemEnd{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-right: 75px;
+    margin-left: 28px;
+}
+.InfoLineImg{
+    width: 26px;
+    height: 30px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.InfoLineSpan{
+    color: #000000;
+    font-size: 17px;
+    cursor: default; 
+}

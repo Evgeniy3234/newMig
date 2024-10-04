@@ -1,0 +1,258 @@
+.MainPage{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    width: 100%;
+    min-height: 100vh;
+    background-color: rgba(243, 243, 243, 1);
+}
+.MainBody{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 70%;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+.MainContainer{ 
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100%;
+    min-height: 100vh;
+    background-image: linear-gradient(
+        #242A40D6 100%,
+        #21273C6B 42%,
+        #1E243996 58.8%,
+        #1C223581 50.4%, 
+        #181E3156 33.6%, 
+        #0F152500 0%
+        ), url("../ImageSource//Back.png");
+        background-repeat: no-repeat;
+        background-color: #0C1A3F;
+        background-size: cover;
+}
+.GreeteingContainer{
+    display: flex;
+    margin-top: 155px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    width: 100%;
+}
+.GreetingText1{
+    color: #FFFFFF;
+    font-size: 50px;
+    font-weight: 600;
+    line-height: 55px;
+    width: 468px;
+    text-wrap: wrap;
+    cursor: default;
+}
+.GreetingText2{
+    color: #FFFFFF;
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 24px;
+    width: 468px;
+    text-wrap: wrap;
+    margin-top: 17px;
+    letter-spacing: 2%;
+    cursor: default;
+}
+.GreetingText3{
+    color: #FFFFFF;
+    font-size: 50px;
+    font-weight: 500;
+    text-wrap: wrap;
+    cursor: default;
+}
+.Sp{
+    margin-top: 54px;
+}
+.ServicesContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 173px;
+    width: 100%;
+}
+.ArrowImg{
+    width: 241px;
+    height: 194px;
+    margin-right: 127px;
+    margin-left: 127px;
+}
+.GridContainer{
+
+  display: grid;
+  grid-template-columns: repeat(2, calc(50% - 28px));
+  gap: 56px;
+  width: 100%;
+  margin-top: 57px;
+  margin-bottom: 112px;
+}
+.SecondContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 70%;
+}
+.SecondPanel{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 652px;
+    border-radius: 36px;
+    background-image: linear-gradient( rgba(221, 229, 237, 0.9), rgba(221, 229, 237, 0.9)), url("../ImageSource/Back.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat, no-repeat;
+    margin-top: 125px;
+}
+/* .SecondPanel::before{
+    position: relative;
+    background-color:  rgba(221, 229, 237, 0.9);
+    content: '';
+    height: 100%;
+    width: 100%;
+    border-radius: 36px;
+  } */
+
+.SecondPanelContaoner{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 90%;
+    height: 80%;
+}
+.GreetingText6{
+    color: rgba(36, 42, 64, 1);
+    font-size: 38px;
+    font-weight: 500;
+    text-wrap: wrap;
+    cursor: default;
+}
+.SecondGridContainer{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 46px;
+    width: 100%;
+}
+.GridElem{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 180px;
+    background-color: rgba(255, 255, 255, 1);
+    border-radius: 16px;
+    box-shadow: 3.66px 3.66px 18.32px 0px rgba(0, 0, 0, 0.15);
+}
+.GridElemContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+    width: 84%;
+    height: 84%;
+}
+.GridElemText{
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 18.32px;
+    text-wrap: wrap;
+    cursor: default;
+}
+.ThirdPanel{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    /* height: 802px; */
+    height: 100vh;
+    margin-top: 125px;
+}
+.ThirdPanelLeftPart{
+    max-width: 50%;
+    height: 90%;
+}
+.ThirdPanelRightPart{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+    height: 90%;
+    margin-left: 8%;
+}
+.GreetingText5{
+    color: #242A40;
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 23px;
+    text-wrap: wrap;
+    cursor: default;
+}
+.GreetingText4{
+    color: rgba(36, 42, 64, 1);
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 32px;
+    text-wrap: wrap;
+    cursor: default;
+}
+.Mm{
+    margin-top: 26px;
+}
+.DocsContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    /* height: 710px; */
+    background-color: rgba(36, 42, 64, 1);
+}
+.SecondContainerItem{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 100%;
+    width: 70%;
+}
+.DocsTittleText{
+    color: rgba(255, 255, 255, 1);
+    font-size: 38px;
+    font-weight: 500;
+    line-height: 32px;
+    cursor: default;
+    margin: 80px 0 80px 0;
+}
+.DocsArea{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 100px;
+}
+
+@media (max-width: 1500px) {
+    .GreetingText5 {
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 20px;
+    }
+  }

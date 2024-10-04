@@ -1,0 +1,30 @@
+.PrimaryButton{
+    border-radius: 54px;
+    background-color: #CD810D;
+    font-size: 22px;
+    line-height: 33px;
+    font-weight: 700;
+    color: #FFFFFF;
+    border: 3px solid #CD810D;
+    padding: 24.5px 70px 24.5px 70px;
+}
+.PrimaryButton:hover{
+    background-color: #FFFFFF;
+    color: #CD810D;
+}
+
+.SecondaryButton{
+    border-radius: 54px;
+    background-color: rgba(36, 42, 64, 1);
+    font-size: 22px;
+    line-height: 33px;
+    font-weight: 700;
+    color: #FFFFFF;
+    border: 3px solid rgba(36, 42, 64, 1);
+    padding: 24.5px 70px 24.5px 70px;
+}
+.SecondaryButton:hover{
+    background-color: #FFFFFF;
+    color: rgba(36, 42, 64, 1);
+}
+
