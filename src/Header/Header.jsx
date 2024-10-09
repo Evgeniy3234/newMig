@@ -1,5 +1,6 @@
 import './Header.css';
 import Logo from "../ImageSource/Logo.svg"
+import Burger from "../ImageSource/Burger.svg"
 import React, { useState } from 'react';
 
 function Header() {
@@ -36,6 +37,7 @@ function Header() {
                return <button className='HeaderButton'>{el.name}</button>
               })  
             }
+            <button className='BurgerButton'><img className='BurgerImg' src={Burger}></img></button>
         </div>
     </header>
   );

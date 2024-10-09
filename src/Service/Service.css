@@ -3,7 +3,6 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    /* width: 592px; */
     width: 100%;
     height: 173px;
     box-shadow: 4.62px 4.62px 23.08px 0px rgba(0, 0, 0, 0.15);
@@ -54,4 +53,52 @@
 }
 .ControlArrow{
     
+}
+
+@media (max-width: 1200px) {
+    .Service{
+        height: 105px;;
+    }
+    .LeftPartService{
+        border-radius: 11px 0 0 11px;
+    }
+    .RightPartService{
+        width: 60px;
+        border-radius: 0 11px 11px 0;
+    }
+    .ServieTitile{
+        font-size: 19px;
+        line-height: 13.94px;
+        margin-left: 22px;
+    }
+    .ServieDescription{
+        font-size: 16px;
+        line-height: 16px;
+        margin-left: 22px;
+        margin-top: 8px;
+    }
+}
+@media (max-width: 800px) {
+    .Service{
+        height: 105px;
+        width: 100%;
+    }
+    .LeftPartService{
+        border-radius: 11px 0 0 11px;
+    }
+    .RightPartService{
+        width: 60px;
+        border-radius: 0 11px 11px 0;
+    }
+    .ServieTitile{
+        font-size: 19px;
+        line-height: 13.94px;
+        margin-left: 21px;
+    }
+    .ServieDescription{
+        font-size: 16px;
+        line-height: 16px;
+        margin-left: 21px;
+        margin-top: 8px;
+    }
 }

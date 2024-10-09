@@ -81,14 +81,14 @@ function MainPage() {
                 МОНИТОРИНГ <br/> И ГИДРОТЕХНИКА
               </span>
               <span className='GreetingText2'>
-                Ваш надежный проводник <br/>
-                в сфере обследований, эксплуатации <br/>
+                Ваш надежный проводник 
+                в сфере обследований, эксплуатации 
                 и мониторинга
               </span>
               <button className="PrimaryButton Sp">ОСТАВИТЬ ЗАЯВКУ</button>
               <div className="ServicesContainer">
                 <span className='GreetingText3'>
-                  Наши услуги и <br/>
+                  Наши услуги и
                   профессиональный опыт
                 </span>
                 <img className='ArrowImg' src={Arrow} alt=""></img>

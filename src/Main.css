@@ -27,4 +27,20 @@
     background-color: #FFFFFF;
     color: rgba(36, 42, 64, 1);
 }
+@media (max-width: 480px) {
+    .PrimaryButton{
+        border-radius: 50px;
+        font-size: 15px;
+        line-height: 22px;
+        font-weight: 700;
+        padding: 15px 40px 15px 40px;
+    }
+    .SecondaryButton{
+        border-radius: 50px;
+        font-size: 15px;
+        line-height: 22px;
+        font-weight: 700;
+        padding: 15px 40px 15px 40px;
+    }
+}
 
