@@ -104,17 +104,17 @@ function MainPage() {
           </div>
           
         </div>
-        <IndividualIntervalsExample></IndividualIntervalsExample>
+        {/* <IndividualIntervalsExample></IndividualIntervalsExample> */}
         <div className='SecondContainer'>
           <div className='SecondPanel'>
             <div className='SecondPanelContaoner'>
-                <span className='GreetingText6'>Преимущества работы с нами:</span>
+                <span className='GreetingText6'>Преимущества работы с нами</span>
                 <div className='SecondGridContainer'>
                   {
                     advantages.map((el)=>{
                       return <div className='GridElem'>
                               <div className='GridElemContainer'>
-                                <img src={el.img}></img>
+                                <img src={el.img} className='GridImage'></img>
                                 <span className='GridElemText'>{el.description}</span>
                               </div>                               
                             </div>
@@ -126,7 +126,7 @@ function MainPage() {
           <div className='ThirdPanel'>
             <img src={MainPageSource1} alt="" className='ThirdPanelLeftPart'></img>
             <div className='ThirdPanelRightPart'>
-              <span className='GreetingText6'>Наша история</span>
+              <span className='GreetingText7'>Наша история</span>
               <span className='GreetingText5'>
                 Наша компания начала свой путь в 2022 году, когда группа инженеров-гидротехников объединилась с идеей предоставлять качественные услуги, развивать отрасль и двигать технический прогресс вперёд.
                 <br/> <br/>
@@ -148,9 +148,9 @@ function MainPage() {
           <div className='SecondContainerItem'>
             <span className='DocsTittleText'>Разрешительные документы</span>
             <div className='DocsArea'>
-              <img src={Doc1} alt=""></img>
-              <img src={Doc2} alt=""></img>
-              <img src={Doc3} alt=""></img>
+              <img src={Doc1} alt="" className='DocImg'></img>
+              <img src={Doc2} alt="" className='DocImg'></img>
+              <img src={Doc3} alt="" className='DocImg'></img>
             </div>
           </div>
         </div>

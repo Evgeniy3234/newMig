@@ -12,8 +12,8 @@ function Footer() {
             <div className="FirstFooterRow">
                 <div className="FoterColumn">
                     <img className='FooterLogo' src={Logo} alt=""></img>
-                    <span className="GreetingText4">info@mig-spb.com</span>
-                    <span className="GreetingText4">+7 (951) 656 6822</span>
+                    <span className="FooterText6">info@mig-spb.com</span>
+                    <span className="FooterText7">+7 (951) 656 6822</span>
                     <span className="FooterText1">Генеральный директор<br/>
                     Косенко Роман Андреевич</span>
                 </div>

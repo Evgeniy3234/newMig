@@ -124,7 +124,7 @@
     justify-content: space-between;
     align-items: flex-start;
     width: 90%;
-    height: 80%;
+    /* height: 80%; */
 }
 .GreetingText6{
     color: rgba(36, 42, 64, 1);
@@ -132,6 +132,8 @@
     font-weight: 500;
     text-wrap: wrap;
     cursor: default;
+    Line-height: 38px;
+    margin-bottom: 57px;
 }
 .SecondGridContainer{
     display: grid;
@@ -168,11 +170,10 @@
 .ThirdPanel{
     display: flex;
     flex-direction: row;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
     width: 100%;
-    /* height: 802px; */
-    height: 100vh;
+    height: 100%;
     margin-top: 125px;
 }
 .ThirdPanelLeftPart{
@@ -203,9 +204,11 @@
     line-height: 32px;
     text-wrap: wrap;
     cursor: default;
+    margin-top: 57px;
 }
 .Mm{
     margin-top: 26px;
+    margin-bottom: 121px;
 }
 .DocsContainer{
     display: flex;
@@ -240,6 +243,24 @@
     width: 100%;
     margin-bottom: 100px;
 }
+.GridImage{
+
+}
+
+.GreetingText7{
+    color: rgba(36, 42, 64, 1);
+    font-size: 38px;
+    font-weight: 500;
+    text-wrap: wrap;
+    cursor: default;
+    Line-height: 34px;
+    margin-bottom: 20px;
+}
+
+.DocImg{
+    /* height: 256px;
+    width: auto; */
+}
 
 @media (max-width: 1500px) {
     .GreetingText5 {
@@ -250,6 +271,11 @@
 }
 
 @media (max-width: 1200px) {
+    .MainBody{
+        width: calc(100% - 140px);
+        margin-left: 70px;
+        margin-right: 70px;
+    }
     .GreeteingContainer{
         margin-top: 75px;
     }
@@ -287,8 +313,104 @@
         margin-bottom: 60px;
         margin-top: 45px;
     }
+    .SecondPanel{
+        height: 742px;
+        border-radius: 30px;
+        margin-top: 50px;
+    }
+    .SecondContainer{
+        width: calc(100% - 140px);
+        margin-left: 70px;
+        margin-right: 70px;
+    }
+    .GreetingText6{
+        font-size: 31px;
+        Line-height: 30.96px;
+        margin-bottom: 37px;
+    }
+    .SecondGridContainer{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+        width: 100%;
+    }
+    .GridElem{
+        height: 169px;
+        border-radius: 15px;
+    }
+    .GridElemText{   
+        font-size: 16px;
+        line-height: 17px;
+    }
+    .ThirdPanel{
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+        margin-top: 93px;
+    }
+    .ThirdPanelLeftPart{
+        width: 100%;
+        height: auto;
+        margin-bottom: 35px;
+    }
+    .ThirdPanelRightPart{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+        width: 100%;
+        margin-left: 8%;
+    }
+    .GreetingText7{
+        font-size: 28px;
+        Line-height: 20px;
+    }
+
+    .GreetingText7{
+        font-size: 34px;
+        Line-height: 20px;
+    }
+    .GreetingText5{
+        font-size: 16px;
+        line-height: 16px;
+    }
+    .GreetingText4{
+        font-size: 23px;
+        line-height: 23px;
+        margin-top: 59px;
+    }
+    .Mm{
+        margin-top: 46px;
+        margin-bottom: 93px;
+    }
+
+    .SecondContainerItem{
+        width: calc(100% - 140px);
+        margin-left: 70px;
+        margin-right: 70px;
+    }
+    .DocsTittleText{
+        margin: 44px 0 44px 0;
+        font-size: 34px;
+        line-height: 34.13px;
+    }
+    .DocsArea{
+        margin-bottom: 56px;
+    }
+    .DocImg{
+        width: 30%;
+        height: auto;
+    }
 }
 @media (max-width: 800px) {
+    .MainBody{
+        width: calc(100% - 60px);
+        margin-left: 30px;
+        margin-right: 30px;
+    }
     .GreeteingContainer{
         margin-top: 71px;
     }
@@ -313,7 +435,6 @@
         margin-right: 30px;
         margin-left: 30px;
         top: 60px;
-        /* right: 140px; */
     }
     .Sp{
         margin-top: 38px;
@@ -330,5 +451,97 @@
         gap: 30px;
         margin-bottom: 70px;
         margin-top: 61px;
+    }
+    .SecondPanel{
+        height: 829px;
+        border-radius: 12.35px;
+        margin-top: 30px;
+    }
+    .SecondContainer{
+        width: calc(100% - 60px);
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+    .GreetingText6{
+        font-size: 28px;
+        Line-height: 29px;
+        margin-bottom: 37px;
+    }
+
+    .SecondGridContainer{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
+        width: 100%;
+    }
+    .GridElem{
+        height: 96px;
+        border-radius: 15px;
+    }
+    .GridImage{
+        display: none;
+    }
+    .GridElemText{   
+        font-size: 16px;
+        line-height: 17px;
+    }
+    .ThirdPanel{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        /* height: 100vh; */
+        height: 100%;
+        margin-top: 31px;
+    }
+    .ThirdPanelLeftPart{
+        width: 100%;
+        height: auto;
+    }
+    .ThirdPanelRightPart{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+        width: 100%;
+        margin-left: 0;
+    }
+    .GreetingText7{
+        font-size: 28px;
+        Line-height: 20px;
+    }
+    .GreetingText5{
+        font-size: 16px;
+        line-height: 16px;
+    }
+    .GreetingText4{
+        font-size: 23px;
+        line-height: 23px;
+        margin-top: 61px;
+    }
+    .Mm{
+        margin-top: 30px;
+        margin-bottom: 41px;
+    }
+
+    .SecondContainerItem{
+        width: calc(100% - 60px);
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+    .DocsTittleText{
+        margin: 22px 0 22px 0;
+        font-size: 28px;
+        line-height: 29px;
+    }
+    .DocsArea{
+        margin-bottom: 22px;
+    }
+    .DocImg{
+        width: 30%;
+        height: auto;
     }
 }
