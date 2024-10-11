@@ -104,7 +104,7 @@ function MainPage() {
           </div>
           
         </div>
-        {/* <IndividualIntervalsExample></IndividualIntervalsExample> */}
+        <IndividualIntervalsExample></IndividualIntervalsExample>
         <div className='SecondContainer'>
           <div className='SecondPanel'>
             <div className='SecondPanelContaoner'>
@@ -123,8 +123,16 @@ function MainPage() {
                 </div>
             </div>
           </div>
+        </div>
+          
+          <div className='ThirdPanelLeftPartMob'>
+              <img src={MainPageSource1} alt="" className='ImgMainPage'></img>
+            </div>
+        <div className='SecondContainer'>
           <div className='ThirdPanel'>
-            <img src={MainPageSource1} alt="" className='ThirdPanelLeftPart'></img>
+            <div className='ThirdPanelLeftPart'>
+              <img src={MainPageSource1} alt="" className='ImgMainPage'></img>
+            </div>
             <div className='ThirdPanelRightPart'>
               <span className='GreetingText7'>Наша история</span>
               <span className='GreetingText5'>

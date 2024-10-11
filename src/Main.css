@@ -5,8 +5,9 @@
     line-height: 33px;
     font-weight: 700;
     color: #FFFFFF;
+    text-wrap: nowrap;
     border: 3px solid #CD810D;
-    padding: 24.5px 70px 24.5px 70px;
+    padding: 24.5px 60px 24.5px 60px;
 }
 .PrimaryButton:hover{
     background-color: #FFFFFF;
@@ -20,8 +21,9 @@
     line-height: 33px;
     font-weight: 700;
     color: #FFFFFF;
+    text-wrap: nowrap;
     border: 3px solid rgba(36, 42, 64, 1);
-    padding: 24.5px 70px 24.5px 70px;
+    padding: 24.5px 60px 24.5px 60px;
 }
 .SecondaryButton:hover{
     background-color: #FFFFFF;

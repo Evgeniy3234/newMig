@@ -2,7 +2,7 @@
     width: 100%;
     height: 100%;
 }
-@media (max-width: 1200px) {
+/* @media (max-width: 1200px) {
     .Caruselcontainer{
         height: 400px;
     }  
@@ -12,4 +12,4 @@
     .Caruselcontainer{
         height: 235px;
     }  
-}
+} */

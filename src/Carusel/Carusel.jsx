@@ -8,24 +8,24 @@ import "./Carusel.css"
 function IndividualIntervalsExample() {
   return (
     <div className='Caruselcontainer'>
-        <Carousel style={{height : "750px"}}>
-        <Carousel.Item interval={2000} style={{height : "750px"}}>
-            <img src={CaruselSource1} className="d-block w-100 mh-100" alt=""/>
+        <Carousel style={{maxHeight : "750px"}}>
+        <Carousel.Item interval={2000} style={{maxHeight : "750px"}}>
+            <img src={CaruselSource1} className="d-block w-100 h-100 customn" alt=""/>
             <Carousel.Caption>
             </Carousel.Caption>
         </Carousel.Item>
-        <Carousel.Item interval={2000} style={{height : "750px"}}>
-            <img src={CaruselSource2} className="d-block w-100 mh-100" alt=""/>
+        <Carousel.Item className='text-center'interval={2000} style={{maxHeight : "750px",alignItems:"flex-end"}}>
+            <img src={CaruselSource2} className="d-block w-100 h-100" alt=""/>
             <Carousel.Caption>
             </Carousel.Caption>
         </Carousel.Item>
-        <Carousel.Item interval={2000} style={{height : "750px"}}>
-            <img src={CaruselSource3} className="d-block w-100 mh-100" alt=""/>
+        <Carousel.Item className='text-center'interval={2000} style={{maxHeight : "750px",alignItems:"flex-end"}}>
+            <img src={CaruselSource3} className="d-block w-100 h-100" alt=""/>
             <Carousel.Caption>
             </Carousel.Caption>
         </Carousel.Item>
-        <Carousel.Item interval={2000} style={{height : "750px"}}>
-            <img src={CaruselSource4} className="d-block w-100 mh-100" alt=""/>
+        <Carousel.Item className='text-center'interval={2000} style={{maxHeight : "750px",alignItems:"flex-end"}}>
+            <img src={CaruselSource4} className="d-block w-100 h-100" alt=""/>
             <Carousel.Caption>
             </Carousel.Caption>
         </Carousel.Item>
