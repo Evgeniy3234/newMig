@@ -10,22 +10,30 @@ function IndividualIntervalsExample() {
     <div className='Caruselcontainer'>
         <Carousel style={{maxHeight : "750px"}}>
         <Carousel.Item interval={2000} style={{maxHeight : "750px"}}>
-            <img src={CaruselSource1} className="d-block w-100 h-100 customn" alt=""/>
+            <div className='caruselImgcontainer'>
+                <img src={CaruselSource1} className="d-block w-100 h-100 customn" alt=""/>
+            </div>
             <Carousel.Caption>
             </Carousel.Caption>
         </Carousel.Item>
-        <Carousel.Item className='text-center'interval={2000} style={{maxHeight : "750px",alignItems:"flex-end"}}>
-            <img src={CaruselSource2} className="d-block w-100 h-100" alt=""/>
+        <Carousel.Item interval={2000} style={{maxHeight : "750px"}}>
+            <div className='caruselImgcontainer'>
+                <img src={CaruselSource2} className="d-block w-100 h-100" alt=""/>
+            </div>
             <Carousel.Caption>
             </Carousel.Caption>
         </Carousel.Item>
-        <Carousel.Item className='text-center'interval={2000} style={{maxHeight : "750px",alignItems:"flex-end"}}>
-            <img src={CaruselSource3} className="d-block w-100 h-100" alt=""/>
+        <Carousel.Item interval={2000} style={{maxHeight : "750px"}}>
+            <div className='caruselImgcontainer'>
+                <img src={CaruselSource3} className="d-block w-100 h-100" alt=""/>
+            </div>
             <Carousel.Caption>
             </Carousel.Caption>
         </Carousel.Item>
-        <Carousel.Item className='text-center'interval={2000} style={{maxHeight : "750px",alignItems:"flex-end"}}>
-            <img src={CaruselSource4} className="d-block w-100 h-100" alt=""/>
+        <Carousel.Item interval={2000} style={{maxHeight : "750px"}}>
+            <div className='caruselImgcontainer'>
+                <img src={CaruselSource4} className="d-block w-100 h-100" alt=""/>
+            </div>
             <Carousel.Caption>
             </Carousel.Caption>
         </Carousel.Item>
