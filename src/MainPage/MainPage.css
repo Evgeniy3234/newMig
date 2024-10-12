@@ -70,6 +70,7 @@
     text-wrap: wrap;
     cursor: default;
     Line-height: 38px;
+    width: 50%;
 }
 .Sp{
     margin-top: 76px;
@@ -79,7 +80,7 @@
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
-    margin-top: 123px;
+    margin-top: 163px;
     width: 100%;
 }
 .ArrowImg{
@@ -304,6 +305,7 @@
     .GreetingText3{
         font-size: 34px;
         Line-height: 35px;
+        width: 100%;
     }
     .ArrowImg{
         width: 213.33px;
@@ -439,6 +441,7 @@
     .GreetingText3{ 
         font-size: 28px;
         Line-height: 29px;
+        width: 100%;
     }
     .ArrowImg{
         position: relative;
