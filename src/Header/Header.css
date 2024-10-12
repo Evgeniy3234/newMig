@@ -36,6 +36,7 @@
 .BurgerButton{
     display: none;
     border: none;
+    background-color: "transparent";
 }
 .BurgerImg{
   width: 38px;

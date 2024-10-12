@@ -1,5 +1,5 @@
 import './Header.css';
-import Logo from "../ImageSource/Logo.svg"
+import Logo from "../ImageSource/LogoMig.svg"
 import Burger from "../ImageSource/Burger.svg"
 import React, { useState } from 'react';
 
@@ -11,7 +11,7 @@ function Header() {
             "link" : ""
         },
         {
-            "name" : "обследования ГТС",
+            "name" : "Обследования ГТС",
             "link" : ""
         },
         {

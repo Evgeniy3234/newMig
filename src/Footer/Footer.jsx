@@ -1,7 +1,7 @@
 import "../MainPage/MainPage.css"
 import "./Footer.css"
 import "../Header/Header.css"
-import Logo from "../ImageSource/Logo.svg"
+import Logo from "../ImageSource/LogoMig.svg"
 
 import React, { useState } from 'react';
 
