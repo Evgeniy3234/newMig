@@ -30,12 +30,12 @@ function Footer() {
                     <span className="FooterText4">О нас</span>
                     <span className="FooterText4">Документы</span>
                     <span className="FooterText4">Контакты</span>
-                    <span className="FooterText4">Отзывы</span>
+                    {/* <span className="FooterText4">Отзывы</span> */}
                 </div>
             </div>
             <div className="SecondFooterRow">
-                <span className="FooterText5">190020, г. Санкт-Петербург, вн.тер.г. муниципальный округ Екатерингофский, ул. Лифляндская, д. 6, литера Д, пом. 27-Н, офис 409</span>
-                <span className="FooterText5">ИНН 7838106706, КПП 783801001, ОГРН 1227800093630</span>
+                <span className="FooterText5">190020, г.&#160;Санкт-Петербург, вн.тер.г.&#160;муниципальный округ Екатерингофский, ул.&#160;Лифляндская, д.&#160;6, литера Д,&#160;пом.&#160;27-Н, офис&#160;409</span>
+                <span className="FooterText5">ИНН&#160;7838106706, КПП&#160;783801001, ОГРН&#160;1227800093630</span>
             </div>
         </div>        
     </footer>

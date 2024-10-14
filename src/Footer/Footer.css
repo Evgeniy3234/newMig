@@ -26,13 +26,14 @@
     flex-direction: column;
     align-items: flex-start;
     justify-content: space-between;
-    height: 250px;
+    /* height: 250px; */
+    height: 100%;
 }
 .FooterText1{
     color: #242A40;
     font-size: 28px;
     font-weight: 500;
-    line-height: 28px;
+    line-height: 30px;
     text-wrap: wrap;
     margin-top: 31px;
     padding-left: 12px;

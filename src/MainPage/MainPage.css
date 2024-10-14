@@ -111,7 +111,8 @@
     align-items: center;
     justify-content: center;
     width: 100%;
-    height: 652px;
+    /* height: 552px; */
+    height: 100%;
     border-radius: 36px;
     background-image: linear-gradient( rgba(221, 229, 237, 0.9), rgba(221, 229, 237, 0.9)), url("../ImageSource/Back.png");
     background-size: cover;
@@ -136,12 +137,15 @@
     cursor: default;
     Line-height: 38px;
     margin-bottom: 57px;
+    margin-top: 57px;
 }
 .SecondGridContainer{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 46px;
     width: 100%;
+    height: 100%;
+    margin-bottom: 57px;
 }
 .GridElem{
     display: flex;
@@ -149,18 +153,20 @@
     align-items: center;
     justify-content: center;
     width: 100%;
-    height: 180px;
+    /* height: 140px; */
+    height: 100%;
     background-color: rgba(255, 255, 255, 1);
     border-radius: 16px;
     box-shadow: 3.66px 3.66px 18.32px 0px rgba(0, 0, 0, 0.15);
 }
 .GridElemContainer{
     display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+    flex-direction: row;
+    align-items: center;
     justify-content: space-around;
-    width: 84%;
-    height: 84%;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
 }
 .GridElemText{
     font-size: 18px;
@@ -168,6 +174,8 @@
     line-height: 18.32px;
     text-wrap: wrap;
     cursor: default;
+    padding-left: 12px;
+    /* width: 80%; */
 }
 .ThirdPanel{
     display: flex;
@@ -329,7 +337,7 @@
         margin-top: 45px;
     }
     .SecondPanel{
-        height: 742px;
+        /* height: 742px; */
         border-radius: 30px;
         margin-top: 50px;
     }
@@ -342,6 +350,7 @@
         font-size: 31px;
         Line-height: 30.96px;
         margin-bottom: 37px;
+        margin-top: 37px;
     }
     .SecondGridContainer{
         display: grid;
@@ -350,7 +359,8 @@
         width: 100%;
     }
     .GridElem{
-        height: 169px;
+        /* height: 169px; */
+        height: 100%;
         border-radius: 15px;
     }
     .GridElemText{   
@@ -470,7 +480,7 @@
         margin-top: 61px;
     }
     .SecondPanel{
-        height: 800px;
+        /* height: 800px; */
         border-radius: 12.35px;
         margin-top: 30px;
     }
@@ -482,6 +492,7 @@
     .GreetingText6{
         font-size: 28px;
         Line-height: 29px;
+        margin-top: 37px;
         margin-bottom: 37px;
     }
 
@@ -492,9 +503,10 @@
         align-items: center;
         gap: 15px;
         width: 100%;
+        margin-bottom: 37px;
     }
     .GridElem{
-        height: 96px;
+        /* height: 96px; */
         border-radius: 15px;
     }
     .GridImage{
@@ -503,6 +515,7 @@
     .GridElemText{   
         font-size: 16px;
         line-height: 17px;
+        padding-left: 0;
     }
     .ThirdPanel{
         display: flex;
@@ -574,5 +587,8 @@
     .DocImg{
         width: 30%;
         height: auto;
+    }
+    .GridElemContainer{
+        padding:20px;
     }
 }

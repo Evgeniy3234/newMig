@@ -83,7 +83,7 @@ function MainPage() {
               <span className='GreetingText2'>
                 Ваш надежный проводник 
                 в сфере обследований, эксплуатации 
-                и мониторинга
+                и мониторинга ГТС
               </span>
               <button className="PrimaryButton Sp">ОСТАВИТЬ ЗАЯВКУ</button>
               <div className="ServicesContainer">
@@ -102,7 +102,6 @@ function MainPage() {
                 }
               </div>
           </div>
-          
         </div>
         <IndividualIntervalsExample></IndividualIntervalsExample>
         <div className='SecondContainer'>
@@ -124,7 +123,6 @@ function MainPage() {
             </div>
           </div>
         </div>
-          
           <div className='ThirdPanelLeftPartMob'>
               <img src={MainPageSource1} alt="" className='ImgMainPage'></img>
             </div>
@@ -148,7 +146,7 @@ function MainPage() {
                 <br/> <br/>
               </span>
               <span className='GreetingText4'>Свяжитесь с нами и мы ответим на любые Ваши вопросы!</span>
-              <button className="SecondaryButton Mm">ОСТАВИТЬ ЗАЯВКУ</button>
+              <button className="PrimaryButton   Mm">ОСТАВИТЬ ЗАЯВКУ</button>
             </div>
           </div>
         </div>
