@@ -1,0 +1,24 @@
+.CenterComp{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-top: 100px;
+}
+
+@media (max-width: 1500px) {
+
+}
+@media (max-width: 1200px) {
+    .CenterComp{
+        flex-direction: column;
+        margin-top: 70px;
+    }
+
+}
+@media (max-width: 800px) {
+    .CenterComp{
+        flex-direction: column;
+        margin-top: 56px;
+    }
+}

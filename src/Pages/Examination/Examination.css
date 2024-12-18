@@ -1,0 +1,26 @@
+.ExDescCont{
+    margin-left: 30px;
+    width: 100%;
+    height: 100%;
+}
+.ExDescTitle{
+    width: 100%;
+    /* margin-top: 124px; */
+    margin-bottom: 50px;
+    font-size: 38px;
+    font-weight: 700;
+    line-height: 38px;
+    text-align: left;
+    color: rgba(255, 255, 255, 1);
+}
+.ExDescOl{
+    margin-bottom: 56px;
+}
+.ExDescOl > li {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 20px;
+    text-align: left;
+    margin-bottom: 19px;
+    color: rgba(255, 255, 255, 1);
+}

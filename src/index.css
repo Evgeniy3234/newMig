@@ -5,9 +5,17 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  scroll-behavior: smooth;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+.link {
+  color: rgba(12, 26, 63, 1); /* blue colors for links too */
+  text-decoration: inherit; /* no underline */
+}
+.active:hover{
+  color: #CD810D;
 }

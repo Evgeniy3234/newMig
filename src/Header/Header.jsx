@@ -2,29 +2,26 @@ import './Header.css';
 import Logo from "../ImageSource/LogoMig.svg"
 import Burger from "../ImageSource/Burger.svg"
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 function Header() {
 
     const [buttonState,setButtonState] = useState([
         {
-            "name" : "О нас",
-            "link" : ""
-        },
-        {
             "name" : "Обследования ГТС",
-            "link" : ""
+            "link" : "/examination"
         },
         {
             "name" : "Геодезический мониторинг",
-            "link" : ""
+            "link" : "/monitoring"
         },
         {
             "name" : "Научные исcледования",
-            "link" : ""
+            "link" : "/research"
         },
         {
             "name" : "Проектирование",
-            "link" : ""
+            "link" : "/design"
         },
     ])
     
@@ -34,7 +31,9 @@ function Header() {
         <div className='RightPartHeader'>
             {
               buttonState.map((el)=>{
-               return <button className='HeaderButton'>{el.name}</button>
+               return <button className='HeaderButton' key={el.link}>
+                        <Link className={el.link.length > 1 ? 'link active' : 'link'} to={el?.link}>{el.name}</Link>
+                      </button>
               })  
             }
             <button className='BurgerButton'><img className='BurgerImg' src={Burger}></img></button>

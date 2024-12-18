@@ -127,7 +127,7 @@ function MainPage() {
               <img src={MainPageSource1} alt="" className='ImgMainPage'></img>
             </div>
         <div className='SecondContainer'>
-          <div className='ThirdPanel'>
+          <div className='ThirdPanel' id='history'>
             <div className='ThirdPanelLeftPart'>
               <img src={MainPageSource1} alt="" className='ImgMainPage'></img>
             </div>
@@ -150,7 +150,7 @@ function MainPage() {
             </div>
           </div>
         </div>
-        <div className='DocsContainer'>
+        <div className='DocsContainer' id='docs'>
           <div className='SecondContainerItem'>
             <span className='DocsTittleText'>Разрешительные документы</span>
             <div className='DocsArea'>

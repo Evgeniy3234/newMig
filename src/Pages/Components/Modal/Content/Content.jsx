@@ -1,16 +1,15 @@
-import './InfoLine.css';
-import Adres from "../ImageSource/Adres.svg"
-import Phone from "../ImageSource/Phone.svg"
+import './Content.css';
+import Adres from "../../../ImageSource/Adres.svg"
+import Phone from "../../../ImageSource/Phone.svg"
 import { Link } from 'react-router-dom';
-import { HashLink } from 'react-router-hash-link';
-import '../Main.css'
+import '../../../Main.css'
 
-function InfoLine() {
+function SendMessage({mail}) {
 
   return (
     <header className="Fl-row-e-c InfoLineContainer">
-        <HashLink className='link active InfoLineLink' to="/#history">О нас</HashLink>
-        <HashLink className='link active InfoLineLink' to='/#docs'>Лицензии</HashLink>
+        <Link className='link active InfoLineLink'>О нас</Link>
+        <Link className='link active InfoLineLink'>Лицензии</Link>
         <div className='Fl-row-c-c'>
             <img src={Adres} alt="" className='InfoLineImg'></img>
             <span className='InfoLineSpan'>г. Санкт-Перебург</span>
@@ -23,4 +22,4 @@ function InfoLine() {
   );
 }
 
-export default InfoLine;
+export default SendMessage;

@@ -1,24 +1,10 @@
 .InfoLineContainer{
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    align-items: center;
     width: 100%;
     height: 56px;
     background-color: #FFFFFF;
 }
-.InfoLineItemStart{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
 
-}
 .InfoLineItemEnd{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
     margin-right: 75px;
     margin-left: 28px;
 }
@@ -33,6 +19,13 @@
     font-size: 17px;
     cursor: default; 
     line-height: 25.5px;
+}
+.InfoLineLink{
+    color: #000000;
+    font-size: 19px; 
+    line-height: 28.5px;
+    font-weight: 600;
+    padding: 15px 20px 15px 20px;
 }
 
 @media (max-width: 1200px) {
@@ -55,6 +48,12 @@
         font-size: 13px;
         line-height: 19.5px;
     }
+    .InfoLineLink{
+        font-size: 13px;
+        line-height: 19.5px;
+        font-weight: 600;
+        padding: 9px 17px 9px 17px;
+    }
 }
 
 @media (max-width: 800px) {
@@ -76,6 +75,8 @@
     .InfoLineSpan{
         font-size: 7px;
         line-height: 8.21px;
-        
+    }
+    .InfoLineLink{
+        display: none;
     }
 }
