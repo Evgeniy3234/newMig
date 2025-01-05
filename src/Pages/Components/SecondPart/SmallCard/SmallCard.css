@@ -1,0 +1,65 @@
+.SmallCard{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width:100%;
+    border-radius: 12px;
+    background-color: rgba(196, 215, 240, 1);
+}
+.SmallCardContainer{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 24px 22px 0px 22px;
+}
+.Gap20{
+    gap:20px;
+}
+.Gap10{
+    gap:10px;
+}
+.fakeMargin22{
+    margin-bottom: 22px;
+}
+
+.SmCName{
+    width: 100%;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 20px;
+    color: rgba(36, 42, 64, 1);
+}
+.SmCName > p{
+    margin-bottom: 0;
+}
+.SmcDescription{
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+    color: rgba(36, 42, 64, 1);
+}
+.SmapCardLIOptions{
+    /* width: 100%; */
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+    color: rgba(36, 42, 64, 1);
+    padding: 0px;
+}
+
+.SmallCardOptions{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 14px 22px 22px 22px;
+    gap: 10px;
+}
+.ArrowRotate90{
+    transform: rotate(90deg);
+}

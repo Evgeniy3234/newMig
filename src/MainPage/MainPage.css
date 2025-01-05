@@ -24,14 +24,16 @@
     align-items: flex-start;
     width: 100%;
     min-height: 100vh;
-    background-image: linear-gradient(
+    background-image: 
+    linear-gradient(
         #242A40D6 100%,
         #21273C6B 42%,
         #1E243996 58.8%,
         #1C223581 50.4%, 
         #181E3156 33.6%, 
         #0F152500 0%
-        ), url("../ImageSource//Back.png");
+        ), 
+        url("../ImageSource//Back.png");
         background-repeat: no-repeat;
         background-color: #0C1A3F;
         background-size: cover;

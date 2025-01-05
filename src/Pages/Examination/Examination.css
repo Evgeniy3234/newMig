@@ -1,11 +1,9 @@
 .ExDescCont{
-    margin-left: 30px;
     width: 100%;
     height: 100%;
 }
 .ExDescTitle{
     width: 100%;
-    /* margin-top: 124px; */
     margin-bottom: 50px;
     font-size: 38px;
     font-weight: 700;
@@ -14,13 +12,59 @@
     color: rgba(255, 255, 255, 1);
 }
 .ExDescOl{
+    width: 100%;
     margin-bottom: 56px;
 }
 .ExDescOl > li {
+    width: 100%;
+    text-wrap: wrap;
     font-size: 18px;
     font-weight: 500;
     line-height: 20px;
     text-align: left;
     margin-bottom: 19px;
     color: rgba(255, 255, 255, 1);
+}
+@media (max-width: 1500px) {
+
+    .ExDescTitle{
+        margin-bottom: 28px;
+        font-size: 32px;
+        line-height: 32px;
+    }
+    .ExDescOl > li {
+        font-size: 16px;
+        line-height: 18px;
+        margin-bottom: 15px;
+    }
+}
+@media (max-width: 1200px) {
+    .ExDescTitle{
+        margin-bottom: 22px;
+        margin-top: 58px;
+        font-size: 24px;
+        line-height: 24px;
+        margin-left: 1rem;
+    }
+    .ExDescOl{
+        margin-bottom: 15px;
+    }
+
+}
+@media (max-width: 800px) {
+    .ExDescTitle{
+        margin-bottom: 22px;
+        margin-top: 58px;
+        font-size: 24px;
+        line-height: 24px;
+        margin-left: 1rem;
+    }
+    .ExDescOl > li {
+        font-size: 16px;
+        line-height: 18px;
+        margin-bottom: 15px;
+    }
+    .ExDescOl{
+        margin-bottom: 40px;
+    }
 }

@@ -4,21 +4,44 @@
     justify-content: space-between;
     align-items: flex-end;
     margin-top: 100px;
+    width: 100%;
 }
-
+.MarginButton{
+    margin: 0;
+}
+.SecondPartTittle{
+    font-size: 38px;
+    font-weight: 700;
+    line-height: 38px;
+    text-align: left;
+    margin: 104px 0 54px 0;
+    color: rgba(255, 255, 255, 1);
+}
 @media (max-width: 1500px) {
 
 }
 @media (max-width: 1200px) {
+    .SecondPartTittle{
+        margin: 54px 0 54px 0;
+    }
     .CenterComp{
-        flex-direction: column;
         margin-top: 70px;
     }
 
 }
 @media (max-width: 800px) {
+    .SecondPartTittle{
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 24px;
+        margin: 54px 0 22px 0;
+    }
+    .MarginButton{
+        margin: 0 16px 0 16px;
+    }
     .CenterComp{
         flex-direction: column;
+        align-items: flex-start;
         margin-top: 56px;
     }
 }

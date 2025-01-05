@@ -1,16 +1,25 @@
 import '../../Main.css';
 import "../../MainPage/MainPage.css"
+import "./Monitoring.css"
 import Header from '../../Header/Header';
 import InfoLine from '../../InfoLine/InfoLine';
 import Footer from '../../Footer/Footer';
 
-import Doc1 from "../../ImageSource/Doc1.png"
-import Doc2 from "../../ImageSource/Doc2.png"
-import Doc3 from "../../ImageSource/Doc3.png"
+import SecondPart from '../Components/SecondPart/SecondPart'
+import source from './SecondPart.js'
+
+import ImgThird from './ImgSource/ThirdPartMonitorign1.png'
+import ThirdPart from '../Components/ThirdPart/ThirdPart.jsx';
+import ThirdSource from './ThirdPart.js'
 
 import React, { useState } from 'react';
 
 import Greeting from '../Components/Greeting/Greeting'
+import Img2 from  '../Design/ImgSource/Design1.jpeg'
+
+import FigCarusel from '../Components/FigCarusel/FigCarusel';
+import '../Components/Component.css'
+import '../Examination/Examination.css'
 
 function Monitoring() {
 
@@ -24,19 +33,25 @@ function Monitoring() {
               FirstPart={[<p>ГЕОДЕЗИЧЕСКИЙ <br/>МОНИТОРИНГ</p>]}
               SecondPart={[<b>Результат выполнения работ </b>,'- предоставление реальных данных о деформациях, смещениях и планово-высотном положении сооружения.']}
             />
-          </div>
-        </div>
-
-        <div className='DocsContainer'>
-          <div className='SecondContainerItem'>
-            <span className='DocsTittleText'>Разрешительные документы</span>
-            <div className='DocsArea'>
-              <img src={Doc1} alt="" className='DocImg'></img>
-              <img src={Doc2} alt="" className='DocImg'></img>
-              <img src={Doc3} alt="" className='DocImg'></img>
+             <div className='CenterComp'>
+              <FigCarusel Source={
+                [
+                {
+                  'img': Img2,
+                  'description': ''//'Выполнение чего-нибудь gggg' 
+                }
+              ]
+              }/>
+              <div className='Fl-col-e-s ExDescCont'>
+                <span className='MoDescTitle'>Проведение геодезического мониторинга планово-высотных смещений сооружения позволяет контролировать их стабильность и безопасность, а также своевременно выявлять возможные деформации. Геодезический мониторинг, в общем случае, рекомендуется проводить не реже 1 раза в год (при отсутствии видимых признаков смещений).</span>
+                <button className="PrimaryButton">ОСТАВИТЬ ЗАЯВКУ</button>
+              </div>
             </div>
+            <span className='SecondPartTittle'>Мы выполняем полный комплекс работ, в который входят:</span>
+            <SecondPart source={source}/>
           </div>
         </div>
+      <ThirdPart source={{'img' : ImgThird, 'parts' : ThirdSource }}></ThirdPart>
       <Footer></Footer>
     </div>
   );

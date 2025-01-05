@@ -1,37 +1,22 @@
 .FigCaruselСontainer{
-    width: 100%;
-    height: 100%;
+    width: 642px;
+    height: 564px;
 }
-/* @media (max-width: 1200px) {
-    .Caruselcontainer{
-        height: 400px;
-    }  
-}
-
-@media (max-width: 800px) {
-    .Caruselcontainer{
-        height: 235px;
-    }  
-} */
  .FigcaruselImgcontainer{
-
-    width: 100%;
-    height: 100%;
-    width: 650px;
-    height: 650px;
+    width: 642px;
+    height: 564px;
     aspect-ratio: 3/2;
-    clip-path: polygon(0 100%,calc(100% - 200px ) 100%,100% 0,0 0);
+    clip-path: polygon(0 100%,calc(100% - 170px ) 100%,100% 0,0 0);
  }
  .FigCaruselСontainer > .carousel > .carousel-control-next{
     right: 100px;
  }
- .FigCaruselСontainer > .slide > .carousel-indicators{
+ .FigCaruselСontainer > .carousel > .carousel-indicators{
     display: none;
  }
- .FigCaruselСontainer > .slide > .carousel-caption{
+ .FigCaruselСontainer > .carousel > .carousel-caption{
     display: none;
  }
-
  .FigCarDescription {
     position: absolute;
     right: 0;
@@ -57,22 +42,51 @@
     text-wrap: wrap;
     padding: 35px 100px 35px 30px;
 }
-
-
- .FigcaruselImgcontainer img{
+.FigcaruselImgcontainer img{
   position: relative;
-  /* transform: translate(0, -20%); */
- }
+}
 
  @media (max-width: 1200px) {
+    .FigCaruselСontainer{
+        width: 453px;
+        height: 364px;
+    }
+    .FigcaruselImgcontainer{
+        width: 453px;
+        height: 364px;
+        aspect-ratio: 3/2;
+        clip-path: polygon(0 100%,calc(100% - 170px ) 100%,100% 0,0 0);
+     }
+    .FigcaruselImgcontainer{
+        clip-path: polygon(0 100%,calc(100% - 110px ) 100%,100% 0,0 0);
+    }
     .FigcaruselImgcontainer img{
         position: relative;
-        transform: translate(0, 0%);
-       }
+    }
+    .FigCarDescription {
+        width: 448px;
+        height: 82px;
+    }
+    .FigCarDescriptionText{
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 18px;
+        padding: 20px 80px 20px 20px;
+    }
+    .FigCaruselСontainer > .carousel > .carousel-control-next{
+        right: 60px;
+     }
  }
  @media (min-width: 1200px) {
-    .FigcaruselImgcontainer img{
+  
+ }
+ @media (max-width: 800px) {
+    
+    .FigCaruselСontainer{
         position: relative;
-        transform: translate(0, -10%);
+        /* left: -30px; */
+        width: 453px;
+        height: 365px;
     }
  }
+

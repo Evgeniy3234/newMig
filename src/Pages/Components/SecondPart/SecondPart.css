@@ -1,0 +1,144 @@
+.SecondPartComponent{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+    margin-bottom: 100px;
+}
+.SecondPartComponentContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+    gap: 30px;
+    /* margin: 100px 0 100px 0; */
+    /* display: flex;
+    align-items: stretch;
+    align-content: center;
+    flex-wrap: wrap;
+    width: 100%; */
+}
+.SecondPartFPart{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 30px;
+}
+.SecondPart{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100%;
+    gap: 30px;
+}
+.SecondPartFPartName{
+    width: 100%;
+    /* height: 100%; */
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 38px;
+    text-align: left;
+    color: rgba(255, 255, 255, 1);
+    border-left: solid 3px rgba(205, 129, 13, 1);
+    padding-left: 12px;
+}
+.SecondPartFPartName > p{
+    text-wrap: noWrap;
+    margin: 0;
+}
+.SecondPartFPartDescription{
+    width: 100%;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 22px;
+    letter-spacing: 0.02em;
+    color: rgba(255, 255, 255, 1);
+    padding: 0px;
+    margin: 0px;
+}
+
+.PartsSeconComp{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+    gap: 15px;
+}
+.partSpan{
+   margin-left: 15px;
+}
+.partImg{
+    margin-top: 6px;
+    width: 14px;
+    height: 100%;
+}
+.partSpan1{
+    margin-top: 4px;
+    width: 14px;
+    height: 100%;
+}
+
+.GridSecondPartContainer{
+    display: grid;
+    grid-template-columns: repeat(2, calc(50% - 16px));
+    gap: 34px;
+    width: 100%;
+}
+.SecondPartTittleDescription{
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 28px;
+    text-align: left;
+    color: rgba(255, 255, 255, 1);
+    margin-top: 30px;
+}
+.MarginTop{
+    margin-top: 66px;
+}
+
+@media (max-width: 1200px) {
+    
+    .SecondPartComponentContainer{
+        flex-direction: column;
+        gap: 20px
+    }
+    .SecondPart{
+        flex-direction: row;
+        gap: 30px
+    }
+    .SecondPartFPartName{
+        font-size: 20px;
+        line-height: 38px;
+    }
+    .SecondPartFPartDescription{
+        font-size: 16px;
+        line-height: 18px;
+    }
+    
+    .MarginTop{
+        margin-top: 54px;
+    }
+}
+
+@media (max-width: 800px) {
+    .SecondPartComponent{
+        margin-bottom: 64px;
+    }
+    .SecondPartComponentContainer{
+        flex-direction: column;
+        gap: 20px;
+    }
+    .GridSecondPartContainer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 30px;
+        width: 100%;
+    }
+}

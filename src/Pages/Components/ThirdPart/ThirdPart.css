@@ -1,0 +1,120 @@
+.ThirdPartContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(196, 215, 239, 1);
+    width:100%;
+    gap: 5%;
+}
+
+.ThirdPartImgContainer{
+    width: 642px;
+    height: 564px;
+    aspect-ratio: 3/2;
+    clip-path: polygon(0 100%,calc(100% - 170px ) 100%,100% 0,0 0);
+}
+.ThirdPartImgContainer img{
+    height: 100%;
+}
+.ThirdPartPartsContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin-right: 15%;
+
+}
+.ThirdPartTittle{
+    font-size: 38px;
+    font-weight: 700;
+    line-height: 57.41px;
+    text-align: left;
+    color: rgba(36, 42, 64, 1);
+    margin-bottom: 46px;
+}
+
+.PartsThirdComp{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+    gap: 15px;
+}
+
+.ThirdPartFPartDescription{
+    width: 100%;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 22px;
+    letter-spacing: 0.02em;
+    color: rgba(36, 42, 64, 1);
+    padding: 0px;
+    margin: 0px;
+}
+.ThirdPartFPartDescription > p{
+    margin: 0;
+}
+.gap15{
+    gap: 15px;  
+}
+
+  @media (max-width: 1200px) {
+    .ThirdPartPartsContainer{
+        margin-right: 70px;
+    }
+    .FigCaruselСontainer{
+        width: 453px;
+        height: 364px;
+    }
+    .ThirdPartImgContainer{
+        width: 453px;
+        height: 364px;
+        clip-path: polygon(0 100%,calc(100% - 110px ) 100%,100% 0,0 0);
+     }
+    .ThirdPartTittle{
+        margin-bottom: 20px;
+    }
+
+    .ThirdPartFPartDescription{
+        font-size: 16px;
+        line-height: 18px;
+    }
+ 
+ }
+
+ @media (max-width: 800px) {
+    .ThirdPartContainer{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        gap: 50px;
+    }
+    .ThirdPartPartsContainer{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        margin: 0 30px 50px 30px;
+    
+    }
+    .ThirdPartTittle{
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 24px;
+        margin-bottom: 20px;
+    }
+    .ThirdPartFPartDescription{
+        font-size: 14px;
+        line-height: 16px;
+    }
+    .ThirdPartImgContainer{
+        width: 100%;
+        height: 100%;
+        clip-path: polygon(0 100%,calc(100% ) 100%,100% 0,0 0);
+     }
+     /* .ThirdPartImg{
+        width: 100%;
+     } */
+}

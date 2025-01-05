@@ -4,14 +4,22 @@ import Header from '../../Header/Header';
 import InfoLine from '../../InfoLine/InfoLine';
 import Footer from '../../Footer/Footer';
 
+import SecondPart from '../Components/SecondPart/SecondPart'
+import source from './SecondPart.js'
 
-import Doc1 from "../../ImageSource/Doc1.png"
-import Doc2 from "../../ImageSource/Doc2.png"
-import Doc3 from "../../ImageSource/Doc3.png"
+import ImgThird from './ImgSource/ThirdPartDesign1.png'
+import ThirdPart from '../Components/ThirdPart/ThirdPart.jsx';
+import ThirdSource from './ThirdPart.js'
 
 import React, { useState } from 'react';
 
 import Greeting from '../Components/Greeting/Greeting'
+
+import Img2 from  '../Design/ImgSource/Design1.jpeg'
+
+import FigCarusel from '../Components/FigCarusel/FigCarusel';
+import '../Components/Component.css'
+import '../Examination/Examination.css'
 
 function Design() {
 
@@ -25,19 +33,26 @@ function Design() {
               FirstPart={[<p>ПРОЕКТИРОВАНИЕ</p>]} 
               SecondPart={[<b>Результат выполнения работ </b>,'- предоставление полного комплекта проектной и рабочей документации, получение согласования заинтересованных сторон.']}
             />
-          </div>
-        </div>
-
-        <div className='DocsContainer'>
-          <div className='SecondContainerItem'>
-            <span className='DocsTittleText'>Разрешительные документы</span>
-            <div className='DocsArea'>
-              <img src={Doc1} alt="" className='DocImg'></img>
-              <img src={Doc2} alt="" className='DocImg'></img>
-              <img src={Doc3} alt="" className='DocImg'></img>
+            <div className='CenterComp'>
+              <FigCarusel Source={
+                [
+                {
+                  'img': Img2,
+                  'description': ''//'Выполнение чего-нибудь gggg' 
+                }
+              ]
+              }/>
+              <div className='Fl-col-e-s ExDescCont'>
+                <span className='ExDescTitle'>Проектная документация на строительство, капитальный ремонт или реконструкцию</span>
+                <button className="PrimaryButton">ОСТАВИТЬ ЗАЯВКУ</button>
+              </div>
             </div>
+            <span className='SecondPartTittle'>Основные услуги и их состав</span>
+            <SecondPart source={source}/>
+            
           </div>
         </div>
+        <ThirdPart source={{'img' : ImgThird, 'parts' : ThirdSource }}></ThirdPart>
       <Footer></Footer>
     </div>
   );

@@ -12,7 +12,7 @@ function FigCarusel({Source}) {
                         <img src={el.img} className="d-block w-100 h-100 customn" alt=""/>
                     </div>
                     { el?.description.length &&
-                        <div className='FigCarDescription'>
+                        <div className='FigCarDescription'> 
                             <span className='FigCarDescriptionText'>{el.description}</span>
                         </div>
                     }

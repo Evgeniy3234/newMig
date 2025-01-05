@@ -1,17 +1,17 @@
 import '../../Main.css';
 import "../../MainPage/MainPage.css"
+import "./Research.css"
 import Header from '../../Header/Header';
 import InfoLine from '../../InfoLine/InfoLine';
 import Footer from '../../Footer/Footer';
 
-
-import Doc1 from "../../ImageSource/Doc1.png"
-import Doc2 from "../../ImageSource/Doc2.png"
-import Doc3 from "../../ImageSource/Doc3.png"
+import {source,options} from './SecondPart.js'
+import ResearchImg from './ImgSource/Research.png'
 
 import React, { useState } from 'react';
 
 import Greeting from '../Components/Greeting/Greeting'
+import SecondPart from '../Components/SecondPart/SecondPart'
 
 function Research() {
 
@@ -25,19 +25,11 @@ function Research() {
             FirstPart={[<p>НАУЧНЫЕ <br/>ИССЛЕДОВАНИЯ</p>]}
             SecondPart={[<b>Результат выполнения работ </b>,'- комплексный анализ проблемы и предоставление рациональных, экономичных и надёжных решений.']}
           />
+          <img className='ResearchImg' src={ResearchImg} alt=''></img>
+          <span className='SecondPartTittle'>Мы предлагаем:</span>
+          <SecondPart source={source} options={options}/>
         </div>
       </div>
-
-    <div className='DocsContainer'>
-      <div className='SecondContainerItem'>
-        <span className='DocsTittleText'>Разрешительные документы</span>
-        <div className='DocsArea'>
-          <img src={Doc1} alt="" className='DocImg'></img>
-          <img src={Doc2} alt="" className='DocImg'></img>
-          <img src={Doc3} alt="" className='DocImg'></img>
-        </div>
-      </div>
-    </div>
     <Footer></Footer>
   </div>
   );
