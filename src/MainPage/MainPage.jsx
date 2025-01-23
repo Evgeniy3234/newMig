@@ -19,10 +19,13 @@ import Doc2 from "../ImageSource/Doc2.png"
 import Doc3 from "../ImageSource/Doc3.png"
 
 import MainPageSource1 from "../ImageSource/MainPageSource.png"
+import Modal from "../Pages/Components/Modal/Modal"
 
 import React, { useState } from 'react';
 
 function MainPage() {
+
+  const [active,Setactive] = useState(false)
 
   const [service,setService] = useState([
     {
@@ -85,7 +88,7 @@ function MainPage() {
                 в сфере обследований, эксплуатации 
                 и мониторинга ГТС
               </span>
-              <button className="PrimaryButton Sp">ОСТАВИТЬ ЗАЯВКУ</button>
+              <button className="PrimaryButton Sp" onClick={()=>{Setactive(true)}}>ОСТАВИТЬ ЗАЯВКУ</button>
               <div className="ServicesContainer">
                 <span className='GreetingText3'>
                   Наши услуги и
@@ -146,7 +149,7 @@ function MainPage() {
                 <br/> <br/>
               </span>
               <span className='GreetingText4'>Свяжитесь с нами и мы ответим на любые Ваши вопросы!</span>
-              <button className="PrimaryButton   Mm">ОСТАВИТЬ ЗАЯВКУ</button>
+              <button className="PrimaryButton Mm" onClick={()=>{Setactive(true)}}>ОСТАВИТЬ ЗАЯВКУ</button>
             </div>
           </div>
         </div>
@@ -161,6 +164,7 @@ function MainPage() {
           </div>
         </div>
       <Footer></Footer>
+      <Modal active={active} Setactive={Setactive}></Modal>
     </div>
   );
 }

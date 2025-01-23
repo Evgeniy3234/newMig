@@ -6,6 +6,7 @@ import Footer from '../../Footer/Footer';
 
 import SecondPart from '../Components/SecondPart/SecondPart'
 import source from './SecondPart.js'
+import Modal from "../Components/Modal/Modal.jsx"
 
 import ImgThird from './ImgSource/ThirdPartDesign1.png'
 import ThirdPart from '../Components/ThirdPart/ThirdPart.jsx';
@@ -22,6 +23,8 @@ import '../Components/Component.css'
 import '../Examination/Examination.css'
 
 function Design() {
+
+  const [active,Setactive] = useState(false)
 
   return (
     <div className="MainPage">
@@ -44,7 +47,7 @@ function Design() {
               }/>
               <div className='Fl-col-e-s ExDescCont'>
                 <span className='ExDescTitle'>Проектная документация на строительство, капитальный ремонт или реконструкцию</span>
-                <button className="PrimaryButton">ОСТАВИТЬ ЗАЯВКУ</button>
+                <button className="PrimaryButton" onClick={()=>{Setactive(true)}}>ОСТАВИТЬ ЗАЯВКУ</button>
               </div>
             </div>
             <span className='SecondPartTittle'>Основные услуги и их состав</span>
@@ -54,6 +57,7 @@ function Design() {
         </div>
         <ThirdPart source={{'img' : ImgThird, 'parts' : ThirdSource }}></ThirdPart>
       <Footer></Footer>
+      <Modal active={active} Setactive={Setactive}></Modal>
     </div>
   );
 }

@@ -8,6 +8,12 @@
     .ResearchImg{
         margin-top: 60px;
     }
+    .custom_full_widthRes {
+        width: 100vw;
+        transform: translateX(-50%);
+        position: relative;
+        left: 50%;
+      }
 }
 
 @media (max-width: 800px) {

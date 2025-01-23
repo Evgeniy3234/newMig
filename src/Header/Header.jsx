@@ -27,7 +27,9 @@ function Header() {
     
   return (
     <header className="Header">
-        <img className='Logo' src={Logo} alt=""></img>
+        <Link to="/">
+            <img className='Logo' src={Logo} alt=""></img>
+        </Link>
         <div className='RightPartHeader'>
             {
               buttonState.map((el)=>{

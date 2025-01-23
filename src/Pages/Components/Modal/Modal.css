@@ -18,23 +18,19 @@
     pointer-events: all;
 
 }
-.ModalPhotoMinContainer123{
-    display: flex;
+.ModalMinContainer{
+    display: flex; 
     align-items: flex-start;
-    justify-content: flex-start;
+    justify-content: flex-start; 
     padding: 0; 
-    border-radius: 1rem;
-    background-color: #fff;
-    min-height: 6rem;
-    min-width: 20rem;
-    max-width: 90vw;
-    max-height: 90vh;
+    border-radius: 34.08px;
+    background-color: rgba(196, 215, 239, 1);
+    min-height: 10rem;
+    max-width: 40rem;
     overflow: hidden;
     overflow-y: auto;
-    transform: scale(0.5);
     transition: 0.5s all;
     z-index: 100;
-    padding: 1rem;
 }
 
 .ContentModal{
@@ -42,20 +38,90 @@
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
-    min-height: 100%;
-    min-width: 100%;
-    overflow-y: auto;
+    height: 100%;
+    width: 100%;
+    overflow-y: hidden;
     overflow-x: hidden;
+}
+.modalPreHeader{
+    width: 100%;
+    height: 30px;
+}
+.preHeaderModalElement{
+    background-color: rgba(205, 129, 13, 1);
+    width: 197.2px;
+    height: 30px;
+    border-radius: 0 26.82px 0 10.85px;
 }
 
 .activeModalContent{
-    z-index: 10;
     z-index: 100;
 }
 
-@media (max-width: 1650px ){
-
+.modalContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0 40px 40px 40px;
+    width: 100%;
+    height: 100%;
 }
-@media (max-width: 1366px ){
 
+.modalHeader{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+    margin-bottom: 14px;
+}
+.modalTittle{
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 45px;
+    text-align: left;
+    color: rgba(36, 42, 64, 1);
+}
+.modalDescription{
+    font-size: 19.44px;
+    font-weight: 400;
+    line-height: 29.16px;
+    color: rgba(36, 42, 64, 1);
+}
+.butonMotalMargin{
+    margin-top: 26px;
+}
+.fw{
+    font-weight: 400;
+}
+
+@media (max-width: 800px) {
+    .ModalMinContainer{
+        border-radius: 24px;
+        min-height: 10rem;
+        max-width: 90%;
+    }
+    .modalContainer{
+        padding: 0 20px 20px 20px;
+    }
+    .modalPreHeader{
+        height: 20px;
+    }
+    .modalDescription{
+        font-size: 16px;
+        line-height: 18px;
+    }
+    .modalTittle{
+        font-size: 24px;
+        line-height: 34px;
+    }
+    .preHeaderModalElement{
+        width: 150px;
+        height: 20px;
+        border-radius: 0 24px 0 8px;
+    }
+    .butonMotalMargin{
+        margin-top: 16px;
+    }
 }

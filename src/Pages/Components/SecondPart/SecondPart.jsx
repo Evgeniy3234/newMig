@@ -4,8 +4,11 @@ import Card from './Card/Card'
 import SmallCard from './SmallCard/SmallCard';
 import {useEffect,useRef,useState} from 'react'
 import {syncRefHeight} from '../Hooks/useSyncRefHeight'
+import Modal from "../../Components/Modal/Modal.jsx"
 
 function SecondPart({source,options}) {
+
+    const [active,Setactive] = useState(false)
 
     const [size, setSize] = useState(window.innerWidth);
     const SmallCardRef = useRef(null);
@@ -36,9 +39,10 @@ function SecondPart({source,options}) {
                 options &&
                 <>
                     <span className='SecondPartTittleDescription'>{options?.description}</span>
-                    <button className="PrimaryButton MarginTop">ОСТАВИТЬ ЗАЯВКУ</button>
+                    <button className="PrimaryButton MarginTop" onClick={()=>{Setactive(true)}}>ОСТАВИТЬ ЗАЯВКУ</button>
                 </>
             }
+            <Modal active={active} Setactive={Setactive}></Modal>
         </div>
 )}
 

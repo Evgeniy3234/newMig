@@ -7,6 +7,7 @@ import Footer from '../../Footer/Footer';
 
 import SecondPart from '../Components/SecondPart/SecondPart'
 import source from './SecondPart.js'
+import Modal from "../Components/Modal/Modal.jsx"
 
 import ImgThird from './ImgSource/ThirdPartMonitorign1.png'
 import ThirdPart from '../Components/ThirdPart/ThirdPart.jsx';
@@ -22,6 +23,8 @@ import '../Components/Component.css'
 import '../Examination/Examination.css'
 
 function Monitoring() {
+
+  const [active,Setactive] = useState(false)
 
   return (
     <div className="MainPage">
@@ -44,7 +47,7 @@ function Monitoring() {
               }/>
               <div className='Fl-col-e-s ExDescCont'>
                 <span className='MoDescTitle'>Проведение геодезического мониторинга планово-высотных смещений сооружения позволяет контролировать их стабильность и безопасность, а также своевременно выявлять возможные деформации. Геодезический мониторинг, в общем случае, рекомендуется проводить не реже 1 раза в год (при отсутствии видимых признаков смещений).</span>
-                <button className="PrimaryButton">ОСТАВИТЬ ЗАЯВКУ</button>
+                <button className="PrimaryButton" onClick={()=>{Setactive(true)}}>ОСТАВИТЬ ЗАЯВКУ</button>
               </div>
             </div>
             <span className='SecondPartTittle'>Мы выполняем полный комплекс работ, в который входят:</span>
@@ -53,6 +56,7 @@ function Monitoring() {
         </div>
       <ThirdPart source={{'img' : ImgThird, 'parts' : ThirdSource }}></ThirdPart>
       <Footer></Footer>
+      <Modal active={active} Setactive={Setactive}></Modal>
     </div>
   );
 }

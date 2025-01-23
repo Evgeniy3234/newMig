@@ -93,7 +93,7 @@
     color: #FFFFFF;
     text-wrap: nowrap;
     border: 3px solid #CD810D;
-    padding: 24.5px 60px 24.5px 60px;
+    padding: 20px 60px 20px 60px;
 }
 .PrimaryButton:hover{
     background-color: #FFFFFF;
@@ -150,6 +150,11 @@
         background-color: #0C1A3F;
         background-size: cover;
 }
+.partImg2{
+    margin-top: 6px;
+    width: 14px;
+    height: 100%;
+}
 @media (max-width: 1200px) {
     .PrimaryButton{
         border-radius: 50px;
@@ -164,5 +169,15 @@
         line-height: 22px;
         font-weight: 700;
         padding: 15px 40px 15px 40px;
+    }
+    .partImg2{
+        margin-top: 4px;
+    }
+}
+@media (max-width: 800px) {
+    .partImg2{
+        margin-top: 3px;
+        width: 10px;
+        height: 100%;
     }
 }

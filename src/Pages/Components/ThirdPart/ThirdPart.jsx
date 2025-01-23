@@ -17,7 +17,7 @@ function ThirdPart({source}) {
             {
                 source?.parts?.map(ell => 
                         <div className='Fl-row-s-s gap15' key={ell}>
-                            <img className='partImg' src={Triangle} alt=''></img>
+                            <img className='partImg2' src={Triangle} alt=''></img>
                             <span className='ThirdPartFPartDescription'>{ell}</span>
                         </div>
                 )

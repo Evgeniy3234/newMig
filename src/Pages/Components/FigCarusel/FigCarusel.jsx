@@ -3,7 +3,7 @@ import 'bootstrap/dist/css/bootstrap.css';
 import "./FigCarusel.css"
 function FigCarusel({Source}) {
   return (
-    <div className='FigCaruselСontainer'>
+    <div className='FigCaruselСontainer custom_full_width '>
         <Carousel slide={false} style={{maxHeight : "564px"}}>
             {
                 Source.map(el => 

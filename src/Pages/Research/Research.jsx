@@ -7,6 +7,7 @@ import Footer from '../../Footer/Footer';
 
 import {source,options} from './SecondPart.js'
 import ResearchImg from './ImgSource/Research.png'
+import Modal from "../Components/Modal/Modal.jsx"
 
 import React, { useState } from 'react';
 
@@ -14,6 +15,8 @@ import Greeting from '../Components/Greeting/Greeting'
 import SecondPart from '../Components/SecondPart/SecondPart'
 
 function Research() {
+
+  const [active,Setactive] = useState(false)
 
   return (
     <div className="MainPage">
@@ -25,12 +28,13 @@ function Research() {
             FirstPart={[<p>НАУЧНЫЕ <br/>ИССЛЕДОВАНИЯ</p>]}
             SecondPart={[<b>Результат выполнения работ </b>,'- комплексный анализ проблемы и предоставление рациональных, экономичных и надёжных решений.']}
           />
-          <img className='ResearchImg' src={ResearchImg} alt=''></img>
+          <img className='ResearchImg custom_full_widthRes' src={ResearchImg} alt=''></img>
           <span className='SecondPartTittle'>Мы предлагаем:</span>
           <SecondPart source={source} options={options}/>
         </div>
       </div>
     <Footer></Footer>
+    <Modal active={active} Setactive={Setactive}></Modal>
   </div>
   );
 }

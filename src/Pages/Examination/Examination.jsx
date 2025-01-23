@@ -6,6 +6,8 @@ import Footer from '../../Footer/Footer';
 import SecondPart from '../Components/SecondPart/SecondPart'
 import ThirdPart from '../Components/ThirdPart/ThirdPart'
 
+import Modal from "../Components/Modal/Modal.jsx"
+
 import source from './SecondPart.js'
 import ThirdSource from './ThirdPart.js'
 import Img1 from './ImgSource/Examination1.jpeg'
@@ -20,6 +22,8 @@ import '../Components/Component.css'
 import './Examination.css'
 
 function Examination() {
+
+const [active,Setactive] = useState(false)
 
   return (
     <div className="MainPage">
@@ -54,7 +58,7 @@ function Examination() {
                   <li>Составление Паспорта ГТС с пополняемой частью</li>
                   <li>Подготовка протокола идентификации</li>
                 </ol>
-                <button className="PrimaryButton MarginButton">ОСТАВИТЬ ЗАЯВКУ</button>
+                <button className="PrimaryButton MarginButton" onClick={()=>{Setactive(true)}}>ОСТАВИТЬ ЗАЯВКУ</button>
               </div>
             </div>
             <span className='SecondPartTittle'>Выдаваемые документы</span>
@@ -64,6 +68,7 @@ function Examination() {
         </div>
        <ThirdPart source={{'img' : ImgThird, 'parts' : ThirdSource }}></ThirdPart>
       <Footer></Footer>
+      <Modal active={active} Setactive={Setactive}></Modal>
     </div>
   );
 }
