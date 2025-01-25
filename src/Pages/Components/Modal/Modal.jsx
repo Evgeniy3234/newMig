@@ -36,7 +36,13 @@ function Modal({active,Setactive}) {
                       )
                   }
                 </div>
-                <button className="PrimaryButton butonMotalMargin">ОСТАВИТЬ ЗАЯВКУ</button>
+                <a 
+                  className="PrimaryButton butonMotalMargin"
+                  href={"mailto:"+"info@mig-spb.com"+'&subject='+"Заявка"+'&body='+""}
+                //onClick={() => {window.open("mailto:"+"info@mig-spb.com"+'?cc='+""+'&subject='+"Заявка"+'&body='+"")}}
+                >
+                  ОСТАВИТЬ ЗАЯВКУ
+                  </a>
               </div>
           </div>
         </div>

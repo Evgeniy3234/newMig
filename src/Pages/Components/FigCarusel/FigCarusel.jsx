@@ -11,10 +11,10 @@ function FigCarusel({Source}) {
                     <div className='FigcaruselImgcontainer'>
                         <img src={el.img} className="d-block w-100 h-100 customn" alt=""/>
                     </div>
-                    { el?.description.length &&
+                    { el?.description.length ?
                         <div className='FigCarDescription'> 
                             <span className='FigCarDescriptionText'>{el.description}</span>
-                        </div>
+                        </div> : <></>
                     }
                 </Carousel.Item>)
             }

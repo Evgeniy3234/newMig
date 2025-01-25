@@ -94,6 +94,7 @@
     text-wrap: nowrap;
     border: 3px solid #CD810D;
     padding: 20px 60px 20px 60px;
+    text-decoration: none;
 }
 .PrimaryButton:hover{
     background-color: #FFFFFF;
@@ -110,6 +111,7 @@
     text-wrap: nowrap;
     border: 3px solid rgba(36, 42, 64, 1);
     padding: 24.5px 60px 24.5px 60px;
+    text-decoration: none;
 }
 .SecondaryButton:hover{
     background-color: #FFFFFF;
@@ -124,27 +126,15 @@
     width: 100%;
     min-height: 100vh;
     background-image: 
-    /* linear-gradient(
+    linear-gradient(
         #242A40D6 100%,
         #21273C6B 42%,
         #1E243996 58.8%,
         #1C223581 50.4%, 
         #181E3156 33.6%, 
         #0F152500 0%
-        ), */
-        /* linear-gradient(
-            0deg,
-            rgba(36, 42, 64, 0.84) 0%,
-            rgba(33, 39, 60, 0.42) 31%, 
-            rgba(30, 36, 57, 0.588) 48%, 
-            rgba(28, 34, 53, 0.504) 68.5%, 
-            rgba(24, 30, 49, 0.336) 88%, 
-            rgba(15, 21, 37, 0) 100%
-        ), */
-        /* linear-gradient(0deg, rgba(36, 42, 64, 0.84) 0%, rgba(0, 0, 0, 0.714) 100%), */
-         linear-gradient(0deg, rgba(36, 42, 64, 0.84) 0%, rgba(0, 0, 0, 0.714) 100%),
-
-         url("./ImageSource//Back.png");
+        ),
+        url("./ImageSource//Back.png");
         background-position: 0 0px;
         background-repeat: no-repeat;
         background-color: #0C1A3F;

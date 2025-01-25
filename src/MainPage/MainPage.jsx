@@ -29,20 +29,24 @@ function MainPage() {
 
   const [service,setService] = useState([
     {
-      "name" : "Обследование ГТС",
-      "description" : "Освидетельствование и паспортизация,технические обследования"
+      "name"        : "Обследование ГТС",
+      "description" : "Освидетельствование и паспортизация,технические обследования",
+      "link"        : "/examination"
     },
     {
-      "name" : "Проектирование",
-      "description" : "Реконструкция, капитальный ремонт ГТС"
+      "name"        : "Проектирование",
+      "description" : "Реконструкция, капитальный ремонт ГТС",
+      "link"        : "/design"
     },
     {
-      "name" : "Геодезический мониторинг",
-      "description" : "Мониторинг планово-высотных смещений и кренов"
+      "name"        : "Геодезический мониторинг",
+      "description" : "Мониторинг планово-высотных смещений и кренов",
+      "link"        : "/monitoring"
     },
     {
-      "name" : "Научные исследования",
-      "description" : "Выявление причин деформаций, гидравлические расчёты"
+      "name"        : "Научные исследования",
+      "description" : "Выявление причин деформаций, гидравлические расчёты",
+      "link"        : "/research"
     },
   ])
   const [advantages,setAdvantages] = useState([
@@ -94,7 +98,7 @@ function MainPage() {
                   Наши услуги и
                   профессиональный опыт
                 </span>
-                <img className='ArrowImg' src={Arrow} alt=""></img>
+                {/* <img className='ArrowImg' src={Arrow} alt=""></img> */}
               </div>
             </div>
             <div className="GridContainer">

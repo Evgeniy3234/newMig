@@ -16,7 +16,7 @@ import ThirdSource from './ThirdPart.js'
 import React, { useState } from 'react';
 
 import Greeting from '../Components/Greeting/Greeting'
-import Img2 from  '../Design/ImgSource/Design1.jpeg'
+import Img1 from  './ImgSource/Monitoring1.png'
 
 import FigCarusel from '../Components/FigCarusel/FigCarusel';
 import '../Components/Component.css'
@@ -40,7 +40,7 @@ function Monitoring() {
               <FigCarusel Source={
                 [
                 {
-                  'img': Img2,
+                  'img': Img1,
                   'description': ''//'Выполнение чего-нибудь gggg' 
                 }
               ]

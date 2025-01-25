@@ -35,7 +35,7 @@ function SmallCard({source}) {
                                 </div> 
                                     : 
                                 <div className='Fl-row-s-s' key={ell}>
-                                    <img className='partImg' src={Triangle} alt=''></img>
+                                    <img className='partImg2' src={Triangle} alt=''></img>
                                     <span className='SmapCardLIOptions partSpan'>{ell}</span>
                                 </div>
                             }

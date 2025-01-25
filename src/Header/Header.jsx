@@ -38,8 +38,37 @@ function Header() {
                       </button>
               })  
             }
-            <button className='BurgerButton'><img className='BurgerImg' src={Burger}></img></button>
+            <div class="hamburger-menu">
+            <input id="menu__toggle" type="checkbox" />
+                <label class="menu__btn" for="menu__toggle">
+                    <span></span>
+                </label>
+
+            <ul class="menu__box">
+            {
+              buttonState.map((el)=>{
+               return <li><a class="menu__item" href={el?.link}>{el.name}</a></li>
+                        {/* <Link className={el.link.length > 1 ? 'link active' : 'link'} to={el?.link}>{el.name}</Link> */}
+                   
+              })  
+            }
+                {/* <li><a class="menu__item" href="#">Home</a></li>
+                <li><a class="menu__item" href="#">About</a></li>
+                <li><a class="menu__item" href="#">Team</a></li>
+                <li><a class="menu__item" href="#">Contact</a></li>
+                <li><a class="menu__item" href="#">Twitter</a></li> */}
+            </ul>
         </div>
+            {/* <button className='BurgerButton'><img className='BurgerImg' src={Burger}></img></button> */}
+        </div>
+        
+
+
+
+
+
+
+
     </header>
   );
 }

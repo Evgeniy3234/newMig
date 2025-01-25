@@ -16,6 +16,8 @@
 }
 .ThirdPartImgContainer img{
     height: 100%;
+    position: relative;
+    left: -20%;
 }
 .ThirdPartPartsContainer{
     display: flex;
@@ -114,6 +116,11 @@
         height: 100%;
         clip-path: polygon(0 100%,calc(100% ) 100%,100% 0,0 0);
      }
+     .ThirdPartImgContainer img{
+        height: 100%;
+        position: relative;
+        left: 0;
+    }
      .gap15{
         gap: 10px;  
     }

@@ -6,6 +6,8 @@
     width: 100%;
     height: 173px;
     box-shadow: 4.62px 4.62px 23.08px 0px rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+    text-decoration: inherit;
 
 }
 .Service:hover{
@@ -20,7 +22,9 @@
     width: 100%;
     height: 100%;
     background-color: #C4D7F0;
-    border-radius: 20px 0 0 20px;
+    /* border-radius: 20px 0 0 20px; */
+    border-radius: 20px;
+  
 }
 .RightPartService{
     display: flex;
@@ -30,7 +34,8 @@
     width: 98px;
     height: 100%;
     background-color: #DAE7F7;
-    border-radius: 0 20px 20px 0;
+    /* border-radius: 0 20px 20px 0; */
+    border-radius: 20px ;
 }
 .ServieTitile{
     color: #242A40;
@@ -38,8 +43,8 @@
     font-weight: 600;
     line-height: 23px;
     text-wrap: wrap;
-    margin-left: 34px;
-    cursor: default;
+    margin: 0 34px 0 34px;
+    /* cursor: default; */
 }
 .ServieDescription{
     color: #242A40;
@@ -47,9 +52,8 @@
     font-weight: 500;
     line-height: 23px;
     text-wrap: wrap;
-    margin-left: 34px;
-    margin-top: 24px;
-    cursor: default;
+    margin: 24px 34px 0 34px;
+    /* cursor: default; */
 }
 .ControlArrow{
     
@@ -57,10 +61,11 @@
 
 @media (max-width: 1200px) {
     .Service{
-        height: 105px;;
+        height: 105px;
     }
     .LeftPartService{
-        border-radius: 11px 0 0 11px;
+        /* border-radius: 11px 0 0 11px; */
+        border-radius: 11px;
     }
     .RightPartService{
         width: 60px;
@@ -69,13 +74,12 @@
     .ServieTitile{
         font-size: 19px;
         line-height: 13.94px;
-        margin-left: 22px;
+        margin: 0 22px 0 22px;
     }
     .ServieDescription{
         font-size: 16px;
         line-height: 16px;
-        margin-left: 22px;
-        margin-top: 8px;
+        margin: 8px 22px 0 22px;
     }
 }
 @media (max-width: 800px) {
@@ -84,7 +88,8 @@
         width: 100%;
     }
     .LeftPartService{
-        border-radius: 11px 0 0 11px;
+        /* border-radius: 11px 0 0 11px; */
+        border-radius: 11px;
     }
     .RightPartService{
         width: 60px;
@@ -93,12 +98,11 @@
     .ServieTitile{
         font-size: 19px;
         line-height: 13.94px;
-        margin-left: 21px;
+        margin: 0 21px 0 21px;
     }
     .ServieDescription{
         font-size: 16px;
         line-height: 18px;
-        margin-left: 21px;
-        margin-top: 8px;
+        margin: 8px 21px 0 21px;
     }
 }

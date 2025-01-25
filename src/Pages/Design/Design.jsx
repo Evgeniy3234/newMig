@@ -16,7 +16,9 @@ import React, { useState } from 'react';
 
 import Greeting from '../Components/Greeting/Greeting'
 
-import Img2 from  '../Design/ImgSource/Design1.jpeg'
+import Img1 from  '../Design/ImgSource/Design1.jpeg'
+import Img2 from  '../Design/ImgSource/Design2.png'
+import Img3 from  '../Design/ImgSource/Design3.png'
 
 import FigCarusel from '../Components/FigCarusel/FigCarusel';
 import '../Components/Component.css'
@@ -40,9 +42,17 @@ function Design() {
               <FigCarusel Source={
                 [
                 {
+                  'img': Img1,
+                  'description': ''//'Выполнение чего-нибудь gggg', 
+                },
+                {
                   'img': Img2,
                   'description': ''//'Выполнение чего-нибудь gggg' 
-                }
+                },
+                {
+                  'img': Img3,
+                  'description': ''//'Выполнение чего-нибудь gggg' 
+                },
               ]
               }/>
               <div className='Fl-col-e-s ExDescCont'>
