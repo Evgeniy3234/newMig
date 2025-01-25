@@ -95,10 +95,14 @@
     border: 3px solid #CD810D;
     padding: 20px 60px 20px 60px;
     text-decoration: none;
+
+    box-shadow: 0 0 0 #CD810D;
+    animation: pulse 2s infinite;
 }
 .PrimaryButton:hover{
     background-color: #FFFFFF;
     color: #CD810D;
+    animation: none;
 }
 
 .SecondaryButton{
@@ -112,10 +116,14 @@
     border: 3px solid rgba(36, 42, 64, 1);
     padding: 24.5px 60px 24.5px 60px;
     text-decoration: none;
+
+    box-shadow: 0 0 0 rgba(36, 42, 64, 1);
+    animation: pulse 2s infinite;
 }
 .SecondaryButton:hover{
     background-color: #FFFFFF;
     color: rgba(36, 42, 64, 1);
+    animation: none;
 }
 
 .imgMainContainer{ 
@@ -145,6 +153,43 @@
     width: 14px;
     height: 100%;
 }
+
+.pulse {
+    display: block;
+    box-shadow: 0 0 0 rgba(204,169,44, 0.4);
+    animation: pulse 2s infinite;
+  }
+  
+  .pulse:hover {
+    animation: none;
+  }
+  
+  @-webkit-keyframes pulse {
+   0% {
+      -webkit-box-shadow: 0 0 0 0 rgba(205, 129, 13, 0.4);
+    }
+   70% {
+     -webkit-box-shadow: 0 0 0 15px rgba(204,169,44, 0);
+   }
+   100% {
+      -webkit-box-shadow: 0 0 0 0 rgba(204,169,44, 0);
+    }
+  }
+  
+  @keyframes pulse {
+    0% {
+      -moz-box-shadow: 0 0 0 0 rgba(205, 129, 13, 0.4);
+     box-shadow: 0 0 0 0 rgba(205, 129, 13, 0.4);
+    }
+   70% {
+     -moz-box-shadow: 0 0 0 15px rgba(204,169,44, 0);
+      box-shadow: 0 0 0 15px rgba(204,169,44, 0);
+   }
+   100% {
+      -moz-box-shadow: 0 0 0 0 rgba(204,169,44, 0);
+     box-shadow: 0 0 0 0 rgba(204,169,44, 0);
+    }
+  }
 @media (max-width: 1200px) {
     .PrimaryButton{
         border-radius: 50px;
@@ -152,6 +197,7 @@
         line-height: 22px;
         font-weight: 700;
         padding: 15px 40px 15px 40px;
+        
     }
     .SecondaryButton{
         border-radius: 50px;

@@ -14,7 +14,8 @@ import Img1 from './ImgSource/Examination1.jpeg'
 
 import ImgThird from '../Examination/ImgSource/ThirdPartExamination1.png'
 
-import React, { useState } from 'react';
+import React, { useState,useEffect } from 'react';
+import {useLocation} from "react-router-dom";
 
 import Greeting from '../Components/Greeting/Greeting'
 import FigCarusel from '../Components/FigCarusel/FigCarusel';
@@ -24,6 +25,12 @@ import './Examination.css'
 function Examination() {
 
 const [active,Setactive] = useState(false)
+const {pathname} = useLocation()
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+
 
   return (
     <div className="MainPage">

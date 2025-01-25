@@ -13,7 +13,8 @@ import ImgThird from './ImgSource/ThirdPartMonitorign1.png'
 import ThirdPart from '../Components/ThirdPart/ThirdPart.jsx';
 import ThirdSource from './ThirdPart.js'
 
-import React, { useState } from 'react';
+import React, { useState,useEffect } from 'react';
+import {useLocation} from "react-router-dom";
 
 import Greeting from '../Components/Greeting/Greeting'
 import Img1 from  './ImgSource/Monitoring1.png'
@@ -25,6 +26,11 @@ import '../Examination/Examination.css'
 function Monitoring() {
 
   const [active,Setactive] = useState(false)
+  const {pathname} = useLocation()
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
 
   return (
     <div className="MainPage">

@@ -7,12 +7,18 @@ import Arrow from "../ImageSource/Arrow.png"
 import Service from "../Service/Service"
 import IndividualIntervalsExample from "../Carusel/Carusel"
 
+import {Link,useLocation} from "react-router-dom";
+
 import Svg1 from "../SecondGridSvg/1.svg"
 import Svg2 from "../SecondGridSvg/2.svg"
 import Svg3 from "../SecondGridSvg/3.svg"
 import Svg4 from "../SecondGridSvg/4.svg"
 import Svg5 from "../SecondGridSvg/5.svg"
 import Svg6 from "../SecondGridSvg/6.svg"
+
+import Doc1Pdg from "../ImageSource/PDFDoc1.pdf"
+import Doc2Pdg from "../ImageSource/PDFDoc2.pdf"
+import Doc3Pdg from "../ImageSource/PDFDoc3.pdf"
 
 import Doc1 from "../ImageSource/Doc1.png"
 import Doc2 from "../ImageSource/Doc2.png"
@@ -21,11 +27,16 @@ import Doc3 from "../ImageSource/Doc3.png"
 import MainPageSource1 from "../ImageSource/MainPageSource.png"
 import Modal from "../Pages/Components/Modal/Modal"
 
-import React, { useState } from 'react';
+import React, { useState,useEffect } from 'react';
 
 function MainPage() {
 
   const [active,Setactive] = useState(false)
+  const {pathname} = useLocation()
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
 
   const [service,setService] = useState([
     {
@@ -104,7 +115,7 @@ function MainPage() {
             <div className="GridContainer">
                 {
                   service.map((el)=>{
-                    return <Service info={el}/>
+                    return <Service info={el} key={el?.name}/>
                   })
                 }
               </div>
@@ -118,7 +129,7 @@ function MainPage() {
                 <div className='SecondGridContainer'>
                   {
                     advantages.map((el)=>{
-                      return <div className='GridElem'>
+                      return <div className='GridElem' key={el?.description}>
                               <div className='GridElemContainer'>
                                 <img src={el.img} className='GridImage'></img>
                                 <span className='GridElemText'>{el.description}</span>
@@ -161,6 +172,10 @@ function MainPage() {
           <div className='SecondContainerItem'>
             <span className='DocsTittleText'>Разрешительные документы</span>
             <div className='DocsArea'>
+              {/* <iframe src={Doc1Pdg} alt="" className='DocImg' type="application/pdf" ></iframe >
+              <iframe src={Doc2Pdg} alt="" className='DocImg' type="application/pdf" ></iframe >
+              <iframe src={Doc3Pdg} alt="" className='DocImg' type="application/pdf"></iframe > */}
+
               <img src={Doc1} alt="" className='DocImg'></img>
               <img src={Doc2} alt="" className='DocImg'></img>
               <img src={Doc3} alt="" className='DocImg'></img>

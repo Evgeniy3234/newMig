@@ -9,7 +9,8 @@ import {source,options} from './SecondPart.js'
 import ResearchImg from './ImgSource/Research.png'
 import Modal from "../Components/Modal/Modal.jsx"
 
-import React, { useState } from 'react';
+import React, { useState,useEffect } from 'react';
+import {useLocation} from "react-router-dom";
 
 import Greeting from '../Components/Greeting/Greeting'
 import SecondPart from '../Components/SecondPart/SecondPart'
@@ -17,6 +18,11 @@ import SecondPart from '../Components/SecondPart/SecondPart'
 function Research() {
 
   const [active,Setactive] = useState(false)
+  const {pathname} = useLocation()
+  
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
 
   return (
     <div className="MainPage">

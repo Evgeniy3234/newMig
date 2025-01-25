@@ -1,7 +1,7 @@
 import './Header.css';
 import Logo from "../ImageSource/LogoMig.svg"
 import Burger from "../ImageSource/Burger.svg"
-import React, { useState } from 'react';
+import React, { useState,useEffect } from 'react';
 import { Link } from 'react-router-dom';
 
 function Header() {
@@ -24,6 +24,24 @@ function Header() {
             "link" : "/design"
         },
     ])
+
+    window.onscroll = function() {
+        var header = document.getElementsByClassName('Header')[0];
+        var stickyOffset = window.innerWidth > 1200 ? 55 : 30;
+    
+        if (window.scrollY > stickyOffset) {
+            header.style.top = 0; // Теперь он будет зафиксирован!
+        } else {
+            console.log(`${stickyOffset}px`)
+            header.style.top = `${stickyOffset}px`; // И снова в исходное положение
+        }
+        };
+        useEffect(()=>{
+            var header = document.getElementsByClassName('Header')[0];
+            var stickyOffset = window.innerWidth > 1200 ? 55 : 30;
+            header.style.top = `${stickyOffset}px`; 
+        },[])
+    
     
   return (
     <header className="Header">
@@ -38,25 +56,22 @@ function Header() {
                       </button>
               })  
             }
-            <div class="hamburger-menu">
+            <div className="hamburger-menu">
             <input id="menu__toggle" type="checkbox" />
-                <label class="menu__btn" for="menu__toggle">
+                <label className="menu__btn" for="menu__toggle">
                     <span></span>
                 </label>
 
-            <ul class="menu__box">
+            <ul className="menu__box">
             {
               buttonState.map((el)=>{
-               return <li><a class="menu__item" href={el?.link}>{el.name}</a></li>
+               return <li key={el.name}>
+                        <a className="menu__item" href={el?.link}>{el.name}</a>
+                     </li>
                         {/* <Link className={el.link.length > 1 ? 'link active' : 'link'} to={el?.link}>{el.name}</Link> */}
                    
               })  
             }
-                {/* <li><a class="menu__item" href="#">Home</a></li>
-                <li><a class="menu__item" href="#">About</a></li>
-                <li><a class="menu__item" href="#">Team</a></li>
-                <li><a class="menu__item" href="#">Contact</a></li>
-                <li><a class="menu__item" href="#">Twitter</a></li> */}
             </ul>
         </div>
             {/* <button className='BurgerButton'><img className='BurgerImg' src={Burger}></img></button> */}
