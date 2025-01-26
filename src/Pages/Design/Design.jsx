@@ -30,6 +30,28 @@ function Design() {
   const [active,Setactive] = useState(false)
   const {pathname} = useLocation()
 
+  const description = [
+    'Проектная документация на строительство, капитальный ремонт или реконструкцию',
+    'Разработка и установка геодезических сетей на сооружении',
+    'Проекты мониторинга технического состояния сооружения'
+  ]
+  const [ind, Setind] = useState(0);
+  const [descriptionValue,SetdescriptionValue] = useState(description[ind])
+
+
+// useEffect(() => {
+//   const myInterval = setInterval(() => {
+//     Setind((prevInd) => prevInd > 1 ? 0 : prevInd + 1);
+//   }, 2000);
+//   // return () => clearInterval(myInterval);
+// }, []);
+
+// useEffect(()=>{
+//   console.log('ind',ind)
+//   SetdescriptionValue(description[ind])
+// },[ind])
+
+
   useEffect(() => {
     window.scrollTo(0, 0);
   }, [pathname]);
@@ -45,26 +67,34 @@ function Design() {
               SecondPart={[<b>Результат выполнения работ </b>,'- предоставление полного комплекта проектной и рабочей документации, получение согласования заинтересованных сторон.']}
             />
             <div className='CenterComp'>
-              <FigCarusel Source={
-                [
-                {
-                  'img': Img1,
-                  'description': ''//'Выполнение чего-нибудь gggg', 
-                },
-                {
-                  'img': Img2,
-                  'description': ''//'Выполнение чего-нибудь gggg' 
-                },
-                {
-                  'img': Img3,
-                  'description': ''//'Выполнение чего-нибудь gggg' 
-                },
-              ]
-              }/>
-              <div className='Fl-col-e-s ExDescCont'>
-                <span className='ExDescTitle'>Проектная документация на строительство, капитальный ремонт или реконструкцию</span>
+              <FigCarusel
+              isChild={true}
+              Source={
+                        [
+                        {
+                          'img': Img1,
+                          'description': '',
+                          'child' : 'Проектная документация на строительство, капитальный ремонт или реконструкцию'
+                        },
+                        {
+                          'img': Img2,
+                          'description': '',
+                          'child' : 'Разработка и установка геодезических сетей на сооружени',
+                        },
+                        {
+                          'img': Img3,
+                          'description': '',
+                          'child' : 'Проекты мониторинга технического состояния сооружения'
+                        },
+                      ]
+              }
+              
+              />
+              {/* <div className='Fl-col-e-s ExDescCont'>
+           
+                <span className='ExDescTitle'>{descriptionValue}</span>
                 <button className="PrimaryButton" onClick={()=>{Setactive(true)}}>ОСТАВИТЬ ЗАЯВКУ</button>
-              </div>
+              </div> */}
             </div>
             <span className='SecondPartTittle'>Основные услуги и их состав</span>
             <SecondPart source={source}/>

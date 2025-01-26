@@ -44,7 +44,7 @@
         margin-top: 58px;
         font-size: 24px;
         line-height: 24px;
-        margin-left: 1rem;
+        /* margin-left: 1rem; */
     }
     .ExDescOl{
         margin-bottom: 15px;
@@ -57,7 +57,7 @@
         margin-top: 58px;
         font-size: 24px;
         line-height: 24px;
-        margin-left: 1rem;
+        /* margin-left: 1rem; */
     }
     .ExDescOl > li {
         font-size: 16px;

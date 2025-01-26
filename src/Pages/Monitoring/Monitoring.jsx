@@ -18,6 +18,7 @@ import {useLocation} from "react-router-dom";
 
 import Greeting from '../Components/Greeting/Greeting'
 import Img1 from  './ImgSource/Monitoring1.png'
+import Img2 from  './ImgSource/Monitoring2.jpg'
 
 import FigCarusel from '../Components/FigCarusel/FigCarusel';
 import '../Components/Component.css'
@@ -47,6 +48,10 @@ function Monitoring() {
                 [
                 {
                   'img': Img1,
+                  'description': ''//'Выполнение чего-нибудь gggg' 
+                },
+                {
+                  'img': Img2,
                   'description': ''//'Выполнение чего-нибудь gggg' 
                 }
               ]

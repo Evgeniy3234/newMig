@@ -3,7 +3,7 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-start;
-    margin-top: 145px;
+    margin-top: 265px;
 }
 .FSpnGrComp{
     font-size: 44px;
@@ -27,7 +27,7 @@
 @media (max-width: 1200px) {
     .GreetingComp{
         flex-direction: column;
-        margin-top: 80px;
+        margin-top: 140px;
     }
     .FSpnGrComp{
         font-size: 34px;
@@ -41,7 +41,7 @@
 @media (max-width: 800px) {
     .GreetingComp{
         flex-direction: column;
-        margin-top: 70px;
+        margin-top: 109px;
     }
     .FSpnGrComp{
         font-size: 28px;

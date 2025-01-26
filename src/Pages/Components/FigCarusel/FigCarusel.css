@@ -1,4 +1,23 @@
+.FigCaruselBody{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    height: 100%;
+}
+
+.caruselChild{
+    position: absolute;
+    width: 200px;
+    right: -100px;
+    bottom: 0;
+    z-index: 100;
+}
+
 .FigCaruselСontainer{
+    display: flex;
+    flex-direction: row;
     width: 642px;
     height: 564px;
 }
@@ -44,6 +63,14 @@
 }
 .FigcaruselImgcontainer img{
   position: relative;
+}
+
+.indOff > .carousel > .carousel-control-next{
+    display: none;
+}
+
+.indOff > .carousel > .carousel-control-prev{
+    display: none;
 }
 
  @media (max-width: 1200px) {
@@ -103,6 +130,9 @@
       }
       .FigCaruselСontainer > .carousel > .carousel-control-next{
         right: 0px;
+     }
+     .childOption{
+        display: none;
      }
  }
 
