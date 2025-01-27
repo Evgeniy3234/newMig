@@ -53,9 +53,9 @@
     font-weight: 600;
     line-height: 36px;
     text-wrap: wrap;
-    /* cursor: pointer; */
+    cursor: pointer;
     margin-top: 10px;
-    cursor: default;
+    /* cursor: default; */
 }
 .FooterText5{
     color: rgba(184, 184, 184, 1);
@@ -74,7 +74,7 @@
     font-weight: 600;
     line-height: 36px;
     text-wrap: wrap;
-    cursor: default;
+    /* cursor: default; */
     margin-top: 25px;
     padding-left: 12px;
 }
@@ -84,7 +84,7 @@
     font-weight: 600;
     line-height: 36px;
     text-wrap: wrap;
-    cursor: default;
+    /* cursor: default; */
     margin-top: 31px;
     padding-left: 12px;
 }

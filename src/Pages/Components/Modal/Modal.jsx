@@ -38,7 +38,7 @@ function Modal({active,Setactive}) {
                 </div>
                 <a 
                   className="PrimaryButton butonMotalMargin"
-                  href={"mailto:"+"info@mig-spb.com"+'&subject='+"Заявка"+'&body='+""}
+                  href="mailto:info@mig-spb.com"
                 //onClick={() => {window.open("mailto:"+"info@mig-spb.com"+'?cc='+""+'&subject='+"Заявка"+'&body='+"")}}
                 >
                   ОСТАВИТЬ ЗАЯВКУ

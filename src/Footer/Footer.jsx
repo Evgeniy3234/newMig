@@ -4,6 +4,8 @@ import "../Header/Header.css"
 import Logo from "../ImageSource/LogoMig.svg"
 
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
+import { HashLink } from 'react-router-hash-link';
 
 function Footer() {
   return (
@@ -11,26 +13,42 @@ function Footer() {
         <div className="FoterContainer">
             <div className="FirstFooterRow">
                 <div className="FoterColumn">
-                    <img className='FooterLogo' src={Logo} alt=""></img>
-                    <span className="FooterText6">info@mig-spb.com</span>
-                    <span className="FooterText7">+7 (951) 656 6822</span>
+                    {/* <img className='FooterLogo' src={Logo} alt=""></img> */}
+                    <Link to="/">
+                        <img className='FooterLogo' src={Logo} alt=""></img>
+                        {/* <img className='Logo' src={Logo} alt=""></img> */}
+                    </Link>
+                    <a 
+                        className="link active FooterText6"
+                        href="mailto:info@mig-spb.com"
+                    >info@mig-spb.com</a>
+                    <a 
+                        className="link active FooterText7"
+                        href="tel:+79516566822"
+                    >+7 (951) 656 6822</a>
                     <span className="FooterText1">Генеральный директор<br/>
                     Косенко Роман Андреевич</span>
                 </div>
                 <div className="FoterColumn">
                     <span className="FooterText2">Услуги</span>
-                    <span className="FooterText4">Обследование ГТС</span>
+                     <Link className='link active FooterText4'  to='/examination'>Обследование ГТС</Link>
+                     <Link className='link active FooterText4'  to='/monitoring'>Геодезический мониторинг</Link>
+                     <Link className='link active FooterText4'  to='/research'>Научные исследования</Link>
+                     <Link className='link active FooterText4'  to='/design'>Проектирование</Link>
+                    {/* <span className="FooterText4">Обследование ГТС</span>
                     <span className="FooterText4">Геодезический мониторинг</span>
                     <span className="FooterText4">Научные исследования</span>
-                    <span className="FooterText4">Проектирование</span>
+                    <span className="FooterText4">Проектирование</span> */}
 
                 </div>
                 <div className="FoterColumn">
                     <span className="FooterText2">О компании</span>
-                    <span className="FooterText4">О нас</span>
-                    <span className="FooterText4">Документы</span>
-                    <span className="FooterText4">Контакты</span>
-                    {/* <span className="FooterText4">Отзывы</span> */}
+                    <HashLink className='link active FooterText4' to="/#history">О нас</HashLink>
+                    <HashLink className='link active FooterText4' to='/#docs'>Документы</HashLink>
+                    <a 
+                        className="link active FooterText4"
+                        href="tel:+79516566822"
+                    >Контакты</a>
                 </div>
             </div>
             <div className="SecondFooterRow">

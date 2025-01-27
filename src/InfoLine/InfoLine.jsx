@@ -17,7 +17,10 @@ function InfoLine() {
         </div>
         <div className='Fl-row-c-c InfoLineItemEnd'>
             <img src={Phone} alt="" className='InfoLineImg'></img>
-            <span className='InfoLineSpan'>+7 (951) 656 6822</span>
+            <a 
+                        className="link active InfoLineSpan"
+                        href="tel:+79516566822"
+                    >+7 (951) 656 6822</a>
         </div>
     </header>
   );

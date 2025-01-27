@@ -17,7 +17,7 @@
 .InfoLineSpan{
     color: #000000;
     font-size: 17px;
-    cursor: default; 
+    /* cursor: default;  */
     line-height: 25.5px;
 }
 .InfoLineLink{
