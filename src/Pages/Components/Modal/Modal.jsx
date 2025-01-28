@@ -1,8 +1,6 @@
 
 import './Modal.css';
-import React, { useState } from 'react';
 import Triangle from '../../../ImageSource/Triangle.svg'
-//! onClick={() => SetActive(false)} добавить в "Modal activeModal" что бы закрывалось по нажатию на темную часть
 
 function Modal({active,Setactive}) {
 
@@ -39,10 +37,8 @@ function Modal({active,Setactive}) {
                 <a 
                   className="PrimaryButton butonMotalMargin"
                   href="mailto:info@mig-spb.com"
-                //onClick={() => {window.open("mailto:"+"info@mig-spb.com"+'?cc='+""+'&subject='+"Заявка"+'&body='+"")}}
-                >
-                  ОСТАВИТЬ ЗАЯВКУ
-                  </a>
+                >ОСТАВИТЬ ЗАЯВКУ
+                </a>
               </div>
           </div>
         </div>

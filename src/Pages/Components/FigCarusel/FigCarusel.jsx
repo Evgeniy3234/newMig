@@ -2,9 +2,8 @@ import Carousel from 'react-bootstrap/Carousel';
 import 'bootstrap/dist/css/bootstrap.css';
 import "./FigCarusel.css"
 import Modal from "../../Components/Modal/Modal.jsx"
-
-
 import React, { useState, useEffect} from 'react';
+
 function FigCarusel({Source,isChild}) {
 
     const [active,Setactive] = useState(false)
@@ -13,9 +12,10 @@ function FigCarusel({Source,isChild}) {
     useEffect(() => {
       const myInterval = setInterval(() => {
         if(isChild){
-            setIndex((prevInd) => prevInd > 1 ? 0 : prevInd + 1);    
+            setIndex((prevInd) => prevInd > 1 ? 0 : prevInd + 1);
+            console.log('index',index)   
         }
-      }, 2000);
+      }, 20000);
       // return () => clearInterval(myInterval);
     }, []);
 
@@ -29,8 +29,7 @@ function FigCarusel({Source,isChild}) {
             <Carousel onSelect={handleSelect} activeIndex={index} slide={false} style={{maxHeight : "564px"}}>
                 {
                     Source.map(el => 
-                        
-                    <Carousel.Item  style={{maxHeight : "564px",}}>
+                    <Carousel.Item interval={20000} style={{maxHeight : "564px",}}>
                         <div className='FigcaruselImgcontainer'>
                             <img src={el.img} className="d-block w-100 h-100 customn" alt=""/>
                         </div>

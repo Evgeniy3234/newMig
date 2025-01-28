@@ -26,12 +26,15 @@ import Doc3 from "../ImageSource/Doc3.png"
 
 import MainPageSource1 from "../ImageSource/MainPageSource.png"
 import Modal from "../Pages/Components/Modal/Modal"
+import ModalDoc from "../Pages/Components/Modal/ModalDoc"
 
 import React, { useState,useEffect } from 'react';
 
 function MainPage() {
 
   const [active,Setactive] = useState(false)
+  const [activeDoc,SetactiveDoc] = useState(false)
+  const [docSource,SetdocSource] = useState(null)
   const {pathname} = useLocation()
 
   useEffect(() => {
@@ -86,7 +89,6 @@ function MainPage() {
       "description" : "Остаёмся на связи после завершения работ по договору"
     },
   ])
-
 
   return (
     <div className="MainPage">
@@ -176,14 +178,27 @@ function MainPage() {
               <iframe src={Doc2Pdg} alt="" className='DocImg' type="application/pdf" ></iframe >
               <iframe src={Doc3Pdg} alt="" className='DocImg' type="application/pdf"></iframe > */}
 
-              <img src={Doc1} alt="" className='DocImg'></img>
-              <img src={Doc2} alt="" className='DocImg'></img>
-              <img src={Doc3} alt="" className='DocImg'></img>
+              <img src={Doc1} alt="" className='DocImg' 
+                onClick={()=>{
+                  SetdocSource(Doc3Pdg)
+                  SetactiveDoc(true)
+                  }}></img>
+              <img src={Doc2} alt="" className='DocImg'
+                onClick={()=>{
+                  SetdocSource(Doc2Pdg)
+                  SetactiveDoc(true)
+                  }}></img>
+              <img src={Doc3} alt="" className='DocImg'
+              onClick={()=>{
+                SetdocSource(Doc1Pdg)
+                SetactiveDoc(true)
+                }}></img>
             </div>
           </div>
         </div>
       <Footer></Footer>
       <Modal active={active} Setactive={Setactive}></Modal>
+      <ModalDoc active={activeDoc} Setactive={SetactiveDoc} Source={docSource}></ModalDoc>
     </div>
   );
 }

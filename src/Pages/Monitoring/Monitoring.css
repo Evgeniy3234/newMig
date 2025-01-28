@@ -16,7 +16,7 @@
 @media (max-width: 1200px) {
     .MoDescTitle{
         margin-bottom: 22px;
-        margin-top: 58px;
+        /* margin-top: 58px; */
         font-size: 18px;
         font-weight: 500;
         line-height: 20px;
@@ -27,7 +27,7 @@
 @media (max-width: 800px) {
     .MoDescTitle{
         margin-bottom: 22px;
-        margin-top: 58px;
+        /* margin-top: 58px; */
         font-size: 18px;
         line-height: 24px;
         /* margin-left: 1rem; */

@@ -1,7 +1,16 @@
 .InfoLineContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
     width: 100%;
     height: 56px;
     background-color: #FFFFFF;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .InfoLineItemEnd{
@@ -18,6 +27,7 @@
     color: #000000;
     font-size: 17px;
     /* cursor: default;  */
+    cursor: pointer;
     line-height: 25.5px;
 }
 .InfoLineLink{
@@ -28,10 +38,25 @@
     padding: 15px 20px 15px 20px;
 }
 
+.InfoLineLeft{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 75px;
+}
+.InfoLineRight{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    /* margin-left: 75px; */
+}
+
 @media (max-width: 1200px) {
 
     .InfoLineContainer{
-        height: 30px;
+        height: 40px;
     }
 
     .InfoLineItemEnd{
@@ -39,18 +64,21 @@
         margin-left: 20px;
     }
     .InfoLineImg{
-        width: 15px;
-        height: 15px;
+        width: 18px;
+        height: 18px;
         margin-left: 10px;
         margin-right: 10px;
     }
-    .InfoLineSpan{
+    .InfoLineLeft{
+        margin-left: 48px;
+      }
+    /* .InfoLineSpan{
         font-size: 13px;
         line-height: 19.5px;
-    }
+    } */
     .InfoLineLink{
-        font-size: 13px;
-        line-height: 19.5px;
+        /* font-size: 13px;
+        line-height: 19.5px; */
         font-weight: 600;
         padding: 9px 17px 9px 17px;
     }
@@ -59,22 +87,37 @@
 @media (max-width: 800px) {
 
     .InfoLineContainer{
+        justify-content: space-between;
         height: 30px;
+    }
+
+    .InfoLineRight{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+        width: 100%;
+        /* margin-left: 75px; */
     }
 
     .InfoLineItemEnd{
         margin-right: 35px;
         margin-left: 10px;
     }
+    .InfoLineItemStart{
+        /* margin-right: 35px; */
+        margin-left: 20px; 
+    }
     .InfoLineImg{
-        width: 9px;
-        height: 10px;
+        width: 16px;
+        height: 14px;
         margin-left: 7px;
         margin-right: 7px;
     }
+    
     .InfoLineSpan{
-        font-size: 7px;
-        line-height: 8.21px;
+        font-size: 12px;
+        line-height: 14px;
     }
     .InfoLineLink{
         display: none;

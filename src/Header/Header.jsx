@@ -27,7 +27,7 @@ function Header() {
 
     window.onscroll = function() {
         var header = document.getElementsByClassName('Header')[0];
-        var stickyOffset = window.innerWidth > 1200 ? 55 : 30;
+        var stickyOffset = window.innerWidth > 1200 ? 55 : (window.innerWidth > 800 ? 40 : 29);
     
         if (window.scrollY > stickyOffset) {
             header.style.top = 0; // Теперь он будет зафиксирован!
@@ -38,7 +38,7 @@ function Header() {
         };
         useEffect(()=>{
             var header = document.getElementsByClassName('Header')[0];
-            var stickyOffset = window.innerWidth > 1200 ? 55 : 30;
+            var stickyOffset = window.innerWidth > 1200 ? 55 : (window.innerWidth > 800 ? 40 : 29);
             header.style.top = `${stickyOffset}px`; 
         },[])
     

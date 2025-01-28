@@ -280,10 +280,10 @@
     transition: transform 0.25s ease;
     cursor: pointer;
 }
-.DocImg:active {
+/* .DocImg:active {
     -webkit-transform: scale(2);
     transform: scale(2);
-}
+} */
 
 .ThirdPanelLeftPartMob{
     display: none;

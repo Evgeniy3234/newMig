@@ -63,9 +63,8 @@
     font-weight: 500;
     line-height: 31px;
     text-wrap: wrap;
-    cursor: default;
+    cursor: pointer;
     margin-bottom: 12px;
-    cursor: default;
 }
 
 .FooterText6{
