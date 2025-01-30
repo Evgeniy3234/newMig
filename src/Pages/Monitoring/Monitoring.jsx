@@ -17,8 +17,9 @@ import React, { useState,useEffect } from 'react';
 import {useLocation} from "react-router-dom";
 
 import Greeting from '../Components/Greeting/Greeting'
-import Img1 from  './ImgSource/Monitoring1.png'
+import Img1 from  './ImgSource/Monitoring1.jpg'
 import Img2 from  './ImgSource/Monitoring2.jpg'
+import Img3 from  './ImgSource/Monitoring3.jpg'
 
 import FigCarusel from '../Components/FigCarusel/FigCarusel';
 import '../Components/Component.css'
@@ -46,14 +47,18 @@ function Monitoring() {
              <div className='CenterComp'>
               <FigCarusel Source={
                 [
-                {
-                  'img': Img1,
-                  'description': ''//'Выполнение чего-нибудь gggg' 
-                },
-                {
-                  'img': Img2,
-                  'description': ''//'Выполнение чего-нибудь gggg' 
-                }
+                  {
+                    'img': Img1,
+                    'description': 'Нивелирование' 
+                  },
+                  {
+                    'img': Img2,
+                    'description': 'Разбивка линейно-угловой сети' 
+                  },
+                  {
+                    'img': Img3,
+                    'description': 'Определение смещений сооружения' 
+                  }
               ]
               }/>
               <div className='Fl-col-e-s ExDescCont'>

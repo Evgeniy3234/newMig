@@ -10,7 +10,15 @@ import Modal from "../Components/Modal/Modal.jsx"
 
 import source from './SecondPart.js'
 import ThirdSource from './ThirdPart.js'
-import Img1 from './ImgSource/Examination1.jpeg'
+import Img1 from './ImgSource/Визуальный осмотр.jpg'
+import Img2 from './ImgSource/Определение прочности бетона.jpg'
+import Img3 from './ImgSource/определение толщины металла.jpeg'
+import Img4 from './ImgSource/Промер глубин на акватории1.jpg'
+import Img5 from './ImgSource/Промер глубин на акватории2.jpg'
+
+// import Img2 from './ImgSource/Examination2.jpg'
+// import Img3 from './ImgSource/Examination3.jpg'
+// import Img4 from './ImgSource/Examination4.jpg'
 
 import ImgThird from '../Examination/ImgSource/ThirdPartExamination1.png'
 
@@ -46,13 +54,27 @@ const {pathname} = useLocation()
               <FigCarusel Source={
                 [
                   {
-                  'img': Img1,
-                  'description': 'Выполнение топографической съёмки' 
-                },
-                // {
-                //   'img': Img2,
-                //   'description': ''//'Выполнение чего-нибудь gggg' 
-                // }
+                    'img': Img1,
+                    'description': 'Визуальный осмотр' 
+                  },
+                  {
+                    'img': Img2,
+                    'description': 'Определение прочности бетона' 
+                  },
+                  {
+                    'img': Img3,
+                    'description': 'Определение толщины металла' 
+                  },
+                  // {
+                  //   'img': Img4,
+                  //   'description': 'Промер глубин на акватории' 
+                  // },
+                  {
+                    'img': Img5,
+                    'description': 'Промер глубин на акватории' 
+                  },
+
+         
               ]
               }/>
               <div className='Fl-col-e-s ExDescCont'>
@@ -61,6 +83,7 @@ const {pathname} = useLocation()
                   <li>Анализ документации и конструкции сооружения</li>
                   <li>Визуальные обследования, дефектоскопия</li>
                   <li>Проведение инструментальных измерений</li>
+                  <li>Водолазный осмотр подводной части сооружения</li>
                   <li>Анализ полученных данных и подготовка отчёта </li>
                   <li>Составление Паспорта ГТС с пополняемой частью</li>
                   <li>Подготовка протокола идентификации</li>
