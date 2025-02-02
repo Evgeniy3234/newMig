@@ -7,7 +7,7 @@
     height: 120px;
     position: fixed;
     width: 100%;
-    z-index: 1000;
+    z-index: 12;
     position: fixed;
     transition-duration: .25s;
     box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5)
