@@ -146,8 +146,8 @@ function MainPage() {
           <div className='ThirdPanelLeftPartMob'>
               <img src={MainPageSource1} alt="" className='ImgMainPage'></img>
             </div>
-        <div className='SecondContainer'>
-          <div className='ThirdPanel' id='history'>
+        <div className='SecondContainer' id='history'>
+          <div className='ThirdPanel'>
             <div className='ThirdPanelLeftPart'>
               <img src={MainPageSource1} alt="" className='ImgMainPage'></img>
             </div>

@@ -9,7 +9,7 @@ import SecondPart from '../Components/SecondPart/SecondPart'
 import source from './SecondPart.js'
 import Modal from "../Components/Modal/Modal.jsx"
 
-import ImgThird from './ImgSource/ThirdPartMonitorign1.png'
+import ImgThird from './ImgSource/ThirdPartMonitorign.jpg'
 import ThirdPart from '../Components/ThirdPart/ThirdPart.jsx';
 import ThirdSource from './ThirdPart.js'
 

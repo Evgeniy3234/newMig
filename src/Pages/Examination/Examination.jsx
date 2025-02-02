@@ -16,11 +16,8 @@ import Img3 from './ImgSource/определение толщины металл
 import Img4 from './ImgSource/Промер глубин на акватории1.jpg'
 import Img5 from './ImgSource/Промер глубин на акватории2.jpg'
 
-// import Img2 from './ImgSource/Examination2.jpg'
-// import Img3 from './ImgSource/Examination3.jpg'
-// import Img4 from './ImgSource/Examination4.jpg'
-
-import ImgThird from '../Examination/ImgSource/ThirdPartExamination1.png'
+// import ImgThird from '../Examination/ImgSource/ThirdPartExamination1.png'
+import ImgThird from '../Examination/ImgSource/ThirdPartExamination.jpg'
 
 import React, { useState,useEffect } from 'react';
 import {useLocation} from "react-router-dom";

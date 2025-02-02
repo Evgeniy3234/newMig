@@ -9,12 +9,12 @@ function Modal({active,Setactive,Source}) {
         <div className="ModalMinContainerDoc">
           <div className='ContentModal' onClick={e => e.stopPropagation()}>
             <div className='modalContainerDoc'>
-              {/* <div className='docHeader'> */}
-                {/* <button className='CloseButton'>
-                  <image className='CloseImg' src={CloseSvg} alt=''></image>
-                </button> */}
-              {/* </div> */}
-                <iframe src={Source} alt="" className='DocImgDoc' type="application/pdf" ></iframe >
+              <div className='docHeader'> 
+                <button className='CloseButton2' onClick={()=>{Setactive(!active)}}>
+                  <img className='CloseImg2' src={CloseSvg} alt=''></img>
+                </button> 
+              </div> 
+              <iframe src={Source} alt="" className='DocImgDoc' type="application/pdf" ></iframe >
             </div>
           </div>
         </div>

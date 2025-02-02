@@ -1,6 +1,7 @@
 
 import './Modal.css';
 import Triangle from '../../../ImageSource/Triangle.svg'
+import CloseSvg from '../../../ImageSource/CloseBlue.svg'
 
 function Modal({active,Setactive}) {
 
@@ -17,7 +18,13 @@ function Modal({active,Setactive}) {
         <div className="ModalMinContainer" onClick={e => e.stopPropagation()}>
           <div className='ContentModal'>
             <div className='modalPreHeader Fl-row-e-e'>
-              <div className='preHeaderModalElement'></div>
+              <button className='preHeaderModalElement' onClick={()=>{Setactive(!active)}}>
+
+              {/* <button className='CloseButton2' onClick={()=>{Setactive(!active)}}> */}
+                  <img className='CloseImg2' src={CloseSvg} alt=''></img>
+                {/* </button> */}
+
+              </button>
             </div>
             <div className='modalContainer'>
                 <div className='modalHeader'>
