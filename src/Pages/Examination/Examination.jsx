@@ -13,10 +13,8 @@ import ThirdSource from './ThirdPart.js'
 import Img1 from './ImgSource/Визуальный осмотр.jpg'
 import Img2 from './ImgSource/Определение прочности бетона.jpg'
 import Img3 from './ImgSource/определение толщины металла.jpeg'
-import Img4 from './ImgSource/Промер глубин на акватории1.jpg'
 import Img5 from './ImgSource/Промер глубин на акватории2.jpg'
 
-// import ImgThird from '../Examination/ImgSource/ThirdPartExamination1.png'
 import ImgThird from '../Examination/ImgSource/ThirdPartExamination.jpg'
 
 import React, { useState,useEffect } from 'react';
@@ -62,10 +60,6 @@ const {pathname} = useLocation()
                     'img': Img3,
                     'description': 'Определение толщины металла' 
                   },
-                  // {
-                  //   'img': Img4,
-                  //   'description': 'Промер глубин на акватории' 
-                  // },
                   {
                     'img': Img5,
                     'description': 'Промер глубин на акватории' 

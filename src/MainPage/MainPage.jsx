@@ -133,7 +133,7 @@ function MainPage() {
                     advantages.map((el)=>{
                       return <div className='GridElem' key={el?.description}>
                               <div className='GridElemContainer'>
-                                <img src={el.img} className='GridImage'></img>
+                                  <img src={el.img} className='GridImage'></img>
                                 <span className='GridElemText'>{el.description}</span>
                               </div>                               
                             </div>
@@ -174,10 +174,6 @@ function MainPage() {
           <div className='SecondContainerItem'>
             <span className='DocsTittleText'>Разрешительные документы</span>
             <div className='DocsArea'>
-              {/* <iframe src={Doc1Pdg} alt="" className='DocImg' type="application/pdf" ></iframe >
-              <iframe src={Doc2Pdg} alt="" className='DocImg' type="application/pdf" ></iframe >
-              <iframe src={Doc3Pdg} alt="" className='DocImg' type="application/pdf"></iframe > */}
-
               <img src={Doc1} alt="" className='DocImg' 
                 onClick={()=>{
                   SetdocSource(Doc3Pdg)

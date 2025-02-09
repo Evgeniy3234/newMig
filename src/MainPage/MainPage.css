@@ -118,7 +118,6 @@
     border-radius: 36px;
     background-image: linear-gradient( rgba(221, 229, 237, 0.9), rgba(221, 229, 237, 0.9)), url("../ImageSource/Back.png");
     background-size: cover;
-    background-position: center;
     background-repeat: no-repeat, no-repeat;
     margin-top: 125px;
 }
@@ -274,16 +273,10 @@
 }
 
 .DocImg{
-    /* height: 560px;
-    width: 500px; */
     transition: -webkit-transform 0.25s ease;
     transition: transform 0.25s ease;
     cursor: pointer;
 }
-/* .DocImg:active {
-    -webkit-transform: scale(2);
-    transform: scale(2);
-} */
 
 .ThirdPanelLeftPartMob{
     display: none;
@@ -346,7 +339,6 @@
         margin-top: 45px;
     }
     .SecondPanel{
-        /* height: 742px; */
         border-radius: 30px;
         margin-top: 50px;
     }
@@ -489,7 +481,6 @@
         margin-top: 61px;
     }
     .SecondPanel{
-        /* height: 800px; */
         border-radius: 12.35px;
         margin-top: 30px;
     }
@@ -515,7 +506,6 @@
         margin-bottom: 37px;
     }
     .GridElem{
-        /* height: 96px; */
         border-radius: 15px;
     }
     .GridImage{

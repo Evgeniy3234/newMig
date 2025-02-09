@@ -6,7 +6,7 @@ import InfoLine from '../../InfoLine/InfoLine';
 import Footer from '../../Footer/Footer';
 
 import {source,options} from './SecondPart.js'
-import ResearchImg from './ImgSource/Research.png'
+import ResearchImg from './ImgSource/Research1.jpg'
 import Modal from "../Components/Modal/Modal.jsx"
 
 import React, { useState,useEffect } from 'react';
