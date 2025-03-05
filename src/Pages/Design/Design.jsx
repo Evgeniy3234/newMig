@@ -17,9 +17,10 @@ import {useLocation} from "react-router-dom";
 
 import Greeting from '../Components/Greeting/Greeting'
 
-import Img1 from  '../Design/ImgSource/Design1.jpeg'
+import Img1 from  '../Design/ImgSource/Design1.png'
 import Img2 from  '../Design/ImgSource/Design2.png'
-import Img3 from  '../Design/ImgSource/Design3.png'
+import Img3 from  '../Design/ImgSource/Design3.jpg'
+import Img5 from  '../Design/ImgSource/Design5.jpg'
 
 import FigCarusel from '../Components/FigCarusel/FigCarusel';
 import '../Components/Component.css'
@@ -74,17 +75,22 @@ function Design() {
                         {
                           'img': Img1,
                           'description': '',
-                          'child' : 'Проектная документация на строительство, капитальный ремонт или реконструкцию'
+                          'child' : 'Проектная документация на строительство, кап. ремонт или реконструкцию'
                         },
                         {
                           'img': Img2,
                           'description': '',
-                          'child' : 'Разработка и установка геодезических сетей на сооружени',
+                          'child' : 'Разработка проектов геодезических сетей',
                         },
                         {
                           'img': Img3,
                           'description': '',
-                          'child' : 'Проекты мониторинга технического состояния сооружения'
+                          'child' : 'Устройство деформационной геодезической сети'
+                        },
+                        {
+                          'img': Img5,
+                          'description': '',
+                          'child' : 'Проект мониторинга технического состояния'
                         },
                       ]
               }

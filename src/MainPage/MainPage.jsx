@@ -16,13 +16,16 @@ import Svg4 from "../SecondGridSvg/4.svg"
 import Svg5 from "../SecondGridSvg/5.svg"
 import Svg6 from "../SecondGridSvg/6.svg"
 
-import Doc1Pdg from "../ImageSource/PDFDoc1.pdf"
-import Doc2Pdg from "../ImageSource/PDFDoc2.pdf"
-import Doc3Pdg from "../ImageSource/PDFDoc3.pdf"
+import Doc1Pdf from "../ImageSource/PDFDoc1.pdf"
+import Doc2Pdf from "../ImageSource/PDFDoc2.pdf"
+import Doc3Pdf from "../ImageSource/PDFDoc3.pdf"
+import Doc4Pdf from "../ImageSource/PDFDoc4.pdf"
+
 
 import Doc1 from "../ImageSource/Doc1.png"
 import Doc2 from "../ImageSource/Doc2.png"
 import Doc3 from "../ImageSource/Doc3.png"
+import Doc4 from "../ImageSource/Doc4.png"
 
 import MainPageSource1 from "../ImageSource/MainPageSource.png"
 import Modal from "../Pages/Components/Modal/Modal"
@@ -165,7 +168,7 @@ function MainPage() {
                 Проводим консультации по документации и освидетельствованиям, а также сопровождаем в регистрации декларации соответствия.
                 <br/> <br/>
               </span>
-              <span className='GreetingText4'>Свяжитесь с нами и мы ответим на любые Ваши вопросы!</span>
+              <span className='GreetingText4'>Свяжитесь с нами, и мы ответим на любые Ваши вопросы!</span>
               <button className="PrimaryButton Mm" onClick={()=>{Setactive(true)}}>ОСТАВИТЬ ЗАЯВКУ</button>
             </div>
           </div>
@@ -174,21 +177,26 @@ function MainPage() {
           <div className='SecondContainerItem'>
             <span className='DocsTittleText'>Разрешительные документы</span>
             <div className='DocsArea'>
-              <img src={Doc1} alt="" className='DocImg' 
+              <img src={Doc1} alt="" className='DocImg horizontal-1' 
                 onClick={()=>{
-                  SetdocSource(Doc3Pdg)
+                  SetdocSource(Doc1Pdf)
                   SetactiveDoc(true)
                   }}></img>
-              <img src={Doc2} alt="" className='DocImg'
+              <img src={Doc2} alt="" className='DocImg horizontal-2'
                 onClick={()=>{
-                  SetdocSource(Doc2Pdg)
+                  SetdocSource(Doc2Pdf)
                   SetactiveDoc(true)
                   }}></img>
-              <img src={Doc3} alt="" className='DocImg'
-              onClick={()=>{
-                SetdocSource(Doc1Pdg)
-                SetactiveDoc(true)
-                }}></img>
+              <img src={Doc4} alt="" className='DocImg horizontal-3'
+                onClick={()=>{
+                  SetdocSource(Doc4Pdf)
+                  SetactiveDoc(true)
+                  }}></img>
+              <img src={Doc3} alt="" className='DocImg vertical'
+                onClick={()=>{
+                  SetdocSource(Doc3Pdf)
+                  SetactiveDoc(true)
+                  }}></img>
             </div>
           </div>
         </div>
